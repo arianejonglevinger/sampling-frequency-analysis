@@ -1,0 +1,90 @@
+packages <- c("tidyverse", "here")
+
+package.check <- lapply(
+  packages,
+  FUN = function(x) {
+    if (!require(x, character.only = TRUE)) {
+      install.packages(x, dependencies = TRUE)
+      library(x, character.only = TRUE)
+    }
+  }
+)
+
+
+metadata_summary <- data %>% select(
+  RainZone, 
+  Location,
+  inductionRatio,
+  coefficientOfVariation,
+  Flow,
+  Analyte,
+  skewnessCategory,
+  averageAnnualMonthsSampled,
+  NumObservationsBelowDetect
+) %>% unique() %>% mutate(
+  skewnessCategory = case_when(
+    grepl("right", skewnessCategory) ~ "Right",
+    grepl("left", skewnessCategory) ~ "Left",
+    T ~ "None"
+  ),
+  Flow = factor(Flow, levels = c("Inflow", "Outflow"))
+) %>% arrange(RainZone, Location, Flow)
+
+phos_metadata <- metadata_summary %>% filter(Analyte == "Phosphorus") %>% pivot_wider(names_from = Flow, values_from = !c("Location", "Analyte", "RainZone", "Flow"), names_glue = "{.value}_{Flow}")
+copper_metadata <- metadata_summary %>% filter(Analyte == "Copper") %>% pivot_wider(names_from = Flow, values_from = !c("Location", "Analyte", "RainZone", "Flow"), names_glue = "{.value}_{Flow}")
+tss_metadata <- metadata_summary %>% filter(Analyte == "TSS") %>% pivot_wider(names_from = Flow, values_from = !c("Location", "Analyte", "RainZone", "Flow"), names_glue = "{.value}_{Flow}")
+
+write.csv(phos_metadata %>% arrange(RainZone, Location) %>% select(-Analyte), here("Supplementary Tables", "phosphorus_table.csv"), row.names = F)
+write.csv(copper_metadata %>% arrange(RainZone, Location) %>% select(-Analyte), here("Supplementary Tables", "copper_table.csv"), row.names = F)
+write.csv(tss_metadata %>% arrange(RainZone, Location) %>% select(-Analyte), here("Supplementary Tables", "tss_table.csv"), row.names = F)
+
+
+for_table <- data %>% select(Location, Flow, Rain_Zone, Analyte, smallerCountBins) %>% unique() %>% mutate(
+  Rain_Zone = case_when(
+    Rain_Zone == 1 ~ "1 (Great Lakes)",
+    Rain_Zone == 2 ~ "2 (North East)",
+    Rain_Zone == 3 ~ "3 (South East)",
+    Rain_Zone == 4 ~ "4 (Lower Mississippi Valley)",
+    Rain_Zone == 5 ~ "5 (Texas)",
+    Rain_Zone == 6 ~ "6 (South West)",
+    Rain_Zone == 7 ~ "7 (Northwest)",
+    Rain_Zone == 8 ~ "8 (California)",
+    Rain_Zone == 9 ~ "9 (Rocky Mountains)"
+  ),
+  Analyte = case_when(
+    Analyte == "Copper" ~ "Dissolved Copper",
+    Analyte == "Phosphorus" ~ "Total Phosphorus",
+    TRUE ~ Analyte
+  ), Analyte = factor(Analyte, levels = c("Dissolved Copper", "Total Phosphorus", "TSS"))
+) %>% select(-Location) %>% group_by(Rain_Zone, Flow, Analyte, smallerCountBins) %>% dplyr::summarize(
+  Count = n()
+) %>% mutate(
+  smallerCountBins = factor(smallerCountBins, c("15-30", "31-60", "61-90", ">90")),
+  Flow = factor(Flow, c("Inflow", "Outflow"))
+) %>% pivot_wider(names_from = c(smallerCountBins, Flow), values_from = Count) %>% arrange(
+  Rain_Zone, Analyte
+)
+
+
+write.csv(for_table %>% arrange(Rain_Zone), here("Supplementary Tables", "count_table.csv"), row.names = F)
+
+number_of_datasets <- data %>% select(
+  RainZone, 
+  Location,
+  Flow,
+  Analyte
+) %>% unique() %>% group_by(
+  RainZone, 
+  Flow,
+  Analyte
+) %>% summarize(Count = n()) %>% 
+  pivot_wider(names_from = c(Flow, Analyte), values_from = !c("RainZone", "Analyte", "Flow"), names_glue = "{.value}_{Analyte}_{Flow}")
+
+write.csv(number_of_datasets %>% arrange(RainZone), here("Supplementary Tables", "num_datasets.csv"), row.names = F)
+
+
+type_of_bmp <- read.csv(here("Data", "type_by_location_rz.csv")) %>% group_by(Rain_Zone, BMP_Category) %>% summarize(
+  count = n()
+) %>% pivot_wider(names_from = "Rain_Zone", values_from = "count")
+
+write.csv(type_of_bmp, here("Data", "type_table.csv"), row.names = F)

@@ -1,0 +1,27 @@
+{
+    "id": "D7008311",
+    "path": "~/Documents/Villanova/SCCWRP_BMP_Analysis/Summary_Analysis/SummarizeResults.R",
+    "project_path": "SummarizeResults.R",
+    "type": "r_source",
+    "hash": "2511048367",
+    "contents": "",
+    "dirty": false,
+    "created": 1738101141561.0,
+    "source_on_save": false,
+    "relative_order": 2,
+    "properties": {
+        "tempName": "Untitled1",
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "660,0",
+        "scrollLine": "450"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1738101227,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1738101227484,
+    "read_only": false,
+    "read_only_alternatives": []
+}
