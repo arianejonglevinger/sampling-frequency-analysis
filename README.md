@@ -42,6 +42,22 @@ WHERE (((qry2WQAnalysisFlatFile.[ParameterName]) In ('Copper, Dissolved','Total 
 The data are saved in Excel spreadsheets in subfolders corresponding to their 
 Rain Zone in the directory ~/Data/ZoneData.
 
+Data from the following Location IDs were excluded from the analysis following
+discussion with the American Society of Civil Engineers/Environmental and Water 
+Resources Institute BMP Database Committee because they did not meet criteria
+for inclusion:
+702665323_TX
+-1762711317_WA
+-43160592_WA
+488336797_FL
+58597072_TX
+1841653012_CA
+-2055029627_CA
+-357056449_CA
+-1166835566_CO
+
+Data are filtered for acceptable BMP Categories in the script **`FinalFigures.R`**
+
 ## Getting Started
 
 ### Dependencies

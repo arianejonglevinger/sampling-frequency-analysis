@@ -1,6 +1,6 @@
 ###############################################################################
 # Edited by Ariane Jong-Levinger
-# Last Modified 8/13/26
+# Last Modified 10/1/26
 ###############################################################################
 
 packages <- c("tidyverse", "ggplot2", "here", "ggpubr", "RColorBrewer", "ggtext")
@@ -118,7 +118,7 @@ data$smallInductionBins <- cut(data$inductionRatio, breaks = c(0, 30, 60, 90, In
   data_BMPCat_s <- data_w_md %>%
     filter(!BMP_Category %in% exclude_BMPCats) %>%
     # also exclude data from National Storm Water Database (updated 6/12/26)
-    filter(BMP_Category != "Not Applicable") # n = 555 (# subsets * 5 quantiles)
+    filter(BMP_Category != "Not Applicable") 
   
   subset_stats <- data_BMPCat_s %>%
     select(N, Rain_Zone, Location, Analyte, Flow, BMP_Category, BMP_Category_long, NumObservations) %>%
@@ -141,23 +141,14 @@ data$smallInductionBins <- cut(data$inductionRatio, breaks = c(0, 30, 60, 90, In
     summarize(N = n())
   #write.csv(nPar_RZ_Analyte_Flow, here::here("Data", "Table 1_Number of Parent Datasets by Rain Zone_Analyte_Flow Type.csv"), row.names = FALSE)
   
-    # filter by N>=30
-    # cv_BMPType_Ngte30 <- data_BMPCat_s %>%
-    #   filter(NumObservations >= 30) %>%
-    #   select(Rain_Zone, Location, Analyte, Flow, BMP_Category, BMP_Category_long,
-    #         coefficientOfVariation, NumObservations) %>%
-    #   distinct() 
-
-    # nPar_RZ_Analyte_Flow_Ngte30 <- cv_BMPType_Ngte30 %>%
-    #   group_by(Rain_Zone, Analyte, Flow) %>%
-    #   summarize(N = n())
-    #write.csv(nPar_RZ_Analyte_Flow_Ngte30, here::here("Data", "Table 1_Number of Parent Datasets by Rain Zone_Analyte_Flow Type_N_GTE_30.csv"), row.names = FALSE)
-
-  # create table of sample sizes by BMP Category
+# create table of sample sizes by BMP Category
   nPar_BMPType <- cv_BMPType %>%
     group_by(BMP_Category_long, BMP_Category) %>%
-    summarise(n_parent_datasets = n(), n_observations = sum(NumObservations))
-  
+    summarise(n_parent_datasets = n(),
+              n_observations = sum(NumObservations),
+              N_20_50 = sum(NumObservations >= 20 & NumObservations < 50),
+              N_gt50 = sum(NumObservations >= 50))
+
   # save as CSV
   #write.csv(nPar_BMPType, here::here("Data", "Table 2_Number of Parent Datasets by BMP Type.csv"), row.names = FALSE)
   
@@ -167,7 +158,7 @@ data$smallInductionBins <- cut(data$inductionRatio, breaks = c(0, 30, 60, 90, In
   parent_only_d <- data_BMPCat_s %>%
     select(Rain_Zone, Location, Analyte, Flow, BMP_Category_long, NumObservations, smallerCountBins) %>%
     distinct() 
-# 716 after filtering by CategoryAnalysisScreen_flag == "Y" OR "="
+# 683 after filtering by CategoryAnalysisScreen_flag == "Y" OR "=" and removing large datasets with multiple sampling years
 
 # save as CSV
 #write.csv(parent_only_d, here::here("Data", "Parent Dataset Basic Metadata.csv"), row.names = FALSE)
@@ -235,26 +226,153 @@ data$smallInductionBins <- cut(data$inductionRatio, breaks = c(0, 30, 60, 90, In
         "3 (South East)", "4 (Lower Mississippi Valley)", "5 (Texas)", "6 (South West)",
         "7 (Northwest)", "8 (California)", "9 (Rocky Mountains)")))
 
+### Compare Rain Zone distributions
+  # statistically compare groups
+  # check normality of all datasets
+  rain_zones <- unique(cv_rzf$Rain_Zone)
+  n_rz <- length(rain_zones)
+
+  # subset by the interaction of Analyte and Flow, then compare Rain Zone groups within each subset
+  ana_flow_combos <- cv_rzf %>%
+    distinct(Analyte, Flow) %>%
+    arrange(Analyte, Flow)
+  n_combo <- nrow(ana_flow_combos)
+
+  # run Kruskal-Wallis test to compare Rain Zone subsets for each Analyte x Flow combination
+
+  # initialize empty output table
+  kw_p_tbl <- tibble(
+    Analyte = character(n_combo),
+    Flow = character(n_combo),
+    KrusWal_pvalue = numeric(n_combo)
+  )
+
+  # loop over analyte x flow combinations
+  for (i in 1:n_combo) {
+    ana_s <- cv_rzf %>%
+      filter(Analyte == ana_flow_combos$Analyte[i],
+             Flow == ana_flow_combos$Flow[i])
+
+    # run Kruskal-Wallis test for significant differences b/w groups (non-parametric)
+    kw_result <- kruskal.test(coefficientOfVariation ~ Rain_Zone, data = ana_s)
+
+    # save results in output table
+    kw_p_tbl$Analyte[i] <- ana_flow_combos$Analyte[i]
+    kw_p_tbl$Flow[i] <- ana_flow_combos$Flow[i]
+    kw_p_tbl$KrusWal_pvalue[i] <- kw_result$p.value
+
+  }
+  # For Phosphorus & TSS (both inflow & outflow), p < 0.05 --> significant difference b/w groups
+
+  # run Dunn's test to see which groups differ significantly from each other
+  library(FSA) # for Dunn's test
+
+  # loop over analyte x flow combinations
+  for (i in 1:n_combo) {
+    ana_s <- cv_rzf %>%
+      filter(Analyte == ana_flow_combos$Analyte[i],
+             Flow == ana_flow_combos$Flow[i])
+
+    # run Dunn's Test w/ Holm correction for p-values
+    dt_rz <- dunnTest(coefficientOfVariation ~ Rain_Zone_label,
+                      data = ana_s,
+                      method = "holm")
+
+    dt_result <- dt_rz$res %>%
+      mutate(Analyte = ana_flow_combos$Analyte[i],
+             Flow = ana_flow_combos$Flow[i])
+
+    # save results in output table
+    if (i == 1) {
+      dt_res_tbl <- dt_result
+    } else {
+      dt_res_tbl <- rbind(dt_res_tbl, dt_result)
+    }
+
+  }
+
+  dt_rz_sig_diff <- dt_res_tbl %>%
+    filter(P.adj < 0.05) %>%
+    mutate(Comparison_label = case_when(
+      Comparison == "2 (North East) - 4 (Lower Mississippi Valley)" ~ "2 (NE) - 4 (LMV)",
+      Comparison == "3 (South East) - 4 (Lower Mississippi Valley)" ~ "3 (SE) - 4 (LMV)",
+      Comparison == "4 (Lower Mississippi Valley) - 7 (Northwest)" ~ "4 (LMV) - 7 (NW)",
+      Comparison == "1 (Great Lakes) - 6 (South West)" ~ "1 (GL) - 6 (SW)",
+      Comparison == "2 (North East) - 9 (Rocky Mountains)" ~ "2 (NE) - 9 (RM)",
+      Comparison == "3 (South East) - 9 (Rocky Mountains)" ~ "3 (SE) - 9 (RM)",
+      Comparison == "6 (South West) - 9 (Rocky Mountains)" ~ "6 (SW) - 9 (RM)",
+      .default = ""
+    ))
+
+  # 7 comparisons show significant differences (p<0.05)
+  
+  # save as CSV
+  #write.csv(dt_rz_sig_diff, "Dunn's Test Results_Significant Differences in COV by Rain Zone_Analyte_FlowType_20260928.csv", row.names = FALSE)
+  
+### plot CDFs by Analyte, Flow type, Rain Zone
+
+# data frame of facet panel labels (a, b, c...), ordered row-major (left to
+# right, top to bottom) to match how facet_grid arranges the Flow x Analyte grid
+facet_label_df_rzf <- expand.grid(
+    Flow = sort(unique(cv_rzf$Flow)),
+    Analyte = sort(unique(cv_rzf$Analyte)),
+    stringsAsFactors = FALSE
+  ) %>%
+  arrange(Flow, Analyte) %>%
+  mutate(facet_label = letters[row_number()])
+
+# collapse the two significant Comparison strings per Analyte x Flow facet
+# into a single two-line label
+sig_diff_label_df <- dt_rz_sig_diff %>%
+  group_by(Analyte, Flow) %>%
+  summarise(sig_diff_label = paste(Comparison_label, collapse = "\n"), .groups = "drop")
+
 cdf_rzf_facet <- ggplot(cv_rzf, aes(x = coefficientOfVariation, color = Rain_Zone_label)) +
     stat_ecdf(geom = "step", linewidth = 1.5) +
     facet_grid(Flow ~ Analyte, scales = "free_y") +
     labs(x = "Coefficient of Variation",
          y = "CDF",
          color = "Rain Zone") +
-    scale_color_brewer(palette = "Dark2", direction = -1) +
-    #scale_color_brewer(palette = "Paired", direction = -1) +
+    scale_color_brewer(palette = "Dark2", direction = -1, labels = function(x) str_wrap(x, width = 30)) +
+    # limit x-axis to 3 (note n=1 outlier for TSS Outflow not shown in caption)
+    xlim(0, 3) +
+    # bold lowercase panel label (a, b, c...) in upper left corner of each facet
+    geom_text(data = facet_label_df_rzf,
+              aes(x = -Inf, y = Inf, label = facet_label),
+              hjust = -0.5,
+              vjust = 1.3,
+              fontface = "bold",
+              inherit.aes = FALSE,
+              size = 14) +
+    # significant (p.adj < 0.05) Dunn's test pairwise comparisons, bottom right corner of each facet
+    geom_text(data = sig_diff_label_df,
+              aes(x = Inf, y = -Inf, label = sig_diff_label),
+              hjust = 1.05,
+              vjust = -0.3,
+              lineheight = 0.8,
+              inherit.aes = FALSE,
+              size = 10) +
     theme_bw(base_size = 41) +
     # get rid of gray strip
-    theme(strip.placement = "outside", panel.spacing = unit(1, "lines"), strip.background = element_blank()) + 
-    # bold panel heading, increase legend font size
+    theme(strip.placement = "outside", panel.spacing = unit(1, "lines"), strip.background = element_blank()) +
+    # bold panel heading, increase legend font size, move legend to bottom, enlarge legend symbols
     theme(strip.text = element_text(face = "bold"),
-      legend.text = element_text(size = 40)
-  )
+      legend.text = element_text(size = 38),
+      legend.position = "bottom",
+      legend.key.size = unit(2.5, "lines")
+  ) +
+    guides(color = guide_legend(override.aes = list(linewidth = 4), nrow = 2))
   
   cdf_rzf_facet
   
   # save as png
-  ggsave(here::here("Plots", "Final", "CDFs_by_Analyte_RainZone_FlowType_Dark2.png"), width = 80, height = 40, units = "cm")
+  ggsave(here::here("Plots", "Final", "CDFs_by_Analyte_RainZone_FlowType_Dark2.png"),
+    plot = cdf_rzf_facet,
+    device = "png",
+    width = 70,
+    height = 40,
+    units = "cm",
+    dpi = 300)
 
 ######## Figure 2: COV CDFs by Analyte, Flow Type ##############################
 
@@ -294,7 +412,7 @@ cdf_rzf_facet <- ggplot(cv_rzf, aes(x = coefficientOfVariation, color = Rain_Zon
         
     }
     # for copper and TSS, p > 0.05, meaning no significant difference
-    # for Phosphorus, p = 0.0002, so there IS a significant difference in medians of the distributions
+    # for Phosphorus, p = 0.00005, so there IS a significant difference in medians of the distributions
   
 # CDFs
     # format dataframe of Mann-Whitney results to use as labels
@@ -302,23 +420,47 @@ cdf_rzf_facet <- ggplot(cv_rzf, aes(x = coefficientOfVariation, color = Rain_Zon
       # format p values for label
       mutate(MW_p_fmt = case_when(
         Analyte == "TSS" ~ signif(MannWhit_pvalue,1),
-        Analyte == "Phosphorus" ~ round(MannWhit_pvalue,4),
+        Analyte == "Phosphorus" ~ round(MannWhit_pvalue,5),
         Analyte == "Copper" ~ signif(MannWhit_pvalue,1)
       )) %>%
-      # format p value text label
-      mutate(p_label = paste0("'Mann-Whitney: '~italic(p)~'= ", MW_p_fmt, "'"))
-    
+      # format p value text label (split across two lines, left-aligned)
+      mutate(p_label_line1 = "Mann-Whitney:",
+             p_label_line2 = paste0("italic(p)~'= ", MW_p_fmt, "'"))
+
+    # data frame of facet panel labels (a, b, c...), in the same alphabetical
+    # order that facet_wrap uses to arrange panels left to right
+    facet_label_df <- tibble(
+      Analyte = sort(unique(cv_BMPType$Analyte)),
+      facet_label = letters[seq_along(sort(unique(cv_BMPType$Analyte)))]
+    )
+
     # plot empirical cdfs
     cdf_ana_facet <- ggplot(cv_BMPType, aes(x = coefficientOfVariation, linetype = Flow)) +
       stat_ecdf(geom = "step", linewidth = 1.5) +
       facet_wrap(~ Analyte, scales = "free_y") +
+      # limit x-axis to 3 (note n=1 outlier for TSS Outflow not shown in caption)
+      xlim(0, 3) +
+      # bold lowercase panel label (a, b, c) in upper left corner of each facet
+      geom_text(data = facet_label_df,
+                aes(x = -Inf, y = Inf, label = facet_label),
+                hjust = -0.5,
+                vjust = 1.3,
+                fontface = "bold",
+                inherit.aes = FALSE,
+                size = 14) +
       # plot labels w/ p values (p<0.05 means significant difference)
       geom_text(data = mw_p_label_df,
-                aes(x = 2.25, y = 0.3, label = p_label),
-                parse = TRUE,
-                #hjust = 1.3, vjust = 1.6,
+                aes(x = 1.3, y = 0.25, label = p_label_line1),
+                parse = FALSE,
+                hjust = 0,
                 inherit.aes = FALSE,
-                size = 11) +
+                size = 10) +
+      geom_text(data = mw_p_label_df,
+                aes(x = 1.3, y = 0.15, label = p_label_line2),
+                parse = TRUE,
+                hjust = 0,
+                inherit.aes = FALSE,
+                size = 10) +
       labs(x = "Coefficient of Variation",
            y = "CDF",
            linetype = "Flow Type") +
@@ -328,12 +470,37 @@ cdf_rzf_facet <- ggplot(cv_rzf, aes(x = coefficientOfVariation, color = Rain_Zon
       theme(strip.placement = "outside", panel.spacing = unit(1, "lines"), strip.background = element_blank()) + 
       # bold panel heading
       theme(strip.text = element_text(face = "bold"),
-      legend.text = element_text(size = 40))
+      legend.text = element_text(size = 40),
+      legend.position = "bottom",
+      legend.key.size = unit(3, "lines")
+    )
     
     cdf_ana_facet
   
-  ggsave(here::here("Plots", "Final", "CDFs_by_Analyte_FlowType.png"), width = 80, height = 25, units = "cm", dpi = 350)
+  ggsave(here::here("Plots", "Final", "CDFs_by_Analyte_FlowType.png"),
+    plot = cdf_ana_facet,
+    device = "png",
+    width = 60,
+    height = 25,
+    units = "cm",
+    dpi = 350)
    
+# assess COV by TSS
+  # proportion of the TSS CDF (i.e., proportion of BMP-type COVs) falling in
+  # each COV range, by Flow type (same grouping as the CDF curves above)
+  tss_cov_props <- cv_BMPType %>%
+    filter(Analyte == "TSS") %>%
+    group_by(Flow) %>%
+    summarise(
+      n = n(),
+      n_cov_1to2 = sum(coefficientOfVariation >= 1 & coefficientOfVariation <= 2, na.rm = TRUE),
+      prop_cov_1to2 = n_cov_1to2 / n,
+      n_cov_gt2 = sum(coefficientOfVariation > 2, na.rm = TRUE),
+      prop_cov_gt2 = n_cov_gt2 / n,
+      .groups = "drop"
+    )
+
+  tss_cov_props
 
 ######## Figure 4: Mean RPD by parent and subset sample sizes ##################
     # and by Analyte, Flow type, and EMC percentile
@@ -505,7 +672,7 @@ cdf_rzf_facet <- ggplot(cv_rzf, aes(x = coefficientOfVariation, color = Rain_Zon
     theme_bw(base_size = 40) +
     theme(legend.title = element_blank())
   
-  bp_EMC_pctl_fg #39 outliers removed
+  bp_EMC_pctl_fg #37 outliers removed
   
   #ggsave(here::here("Plots", "Boxplots_EMC_by_Analyte_by_Parent_Dataset_Sample_Size.png"), width = 70, height = 70, units = "cm")
   
@@ -679,9 +846,9 @@ cdf_rzf_facet <- ggplot(cv_rzf, aes(x = coefficientOfVariation, color = Rain_Zon
                                                         "Phosphorus: Outflow", "TSS"))) %>%
     mutate(npar_gt50 = case_when(
       NumObservations <= 50 ~ "20-50",
-      .default = "51-250"
+      .default = "51-193"
     )) %>%
-    mutate(npar_gt50 = factor(npar_gt50, levels = c("20-50", "51-250")))
+    mutate(npar_gt50 = factor(npar_gt50, levels = c("20-50", "51-193")))
 
   plot_data_by_N_gt50 <- data_BMPCat_s_fg_Ngt50 %>%
     group_by(N_numerical, Quartile, facet_group, npar_gt50) %>%
@@ -708,17 +875,12 @@ cdf_rzf_facet <- ggplot(cv_rzf, aes(x = coefficientOfVariation, color = Rain_Zon
 ### mean RPD by parent dataset sample size and subset sample size (error bars = 95% CIs)
   #bin_levels <- c("20-30", "31-60", "61-90", ">90", "20-90", "All bins")
 
-# plot_data <- bind_rows(pergroup_data, aggregated_data, aggregated_data_gt90) %>%
-#     mutate(smallerCountBins = factor(smallerCountBins, levels = bin_levels))
-
  #bin_levels_gt90 <- c("20-30", "31-60", "61-90", ">90", "20-90")
   
   # plot_data_gt90 <- bind_rows(pergroup_data, aggregated_data_gt90) %>%
   #   mutate(smallerCountBins = factor(smallerCountBins, levels = bin_levels_gt90))
   
-  #bin_levels_byNclass <- c("20-30", "31-60", "61-90", ">90")
- 
-  bin_levels_gt50 <- c("20-50", "51-250")
+  bin_levels_gt50 <- c("20-50", "51-193")
 
   set.seed(36)  # ensures reproducible jitter positions for geom_point
 
@@ -786,16 +948,16 @@ cdf_rzf_facet <- ggplot(cv_rzf, aes(x = coefficientOfVariation, color = Rain_Zon
 
   # one rpd curve per facet_group, except TSS which is split into
   # "20-90" and ">90" groupings based on smallerCountBins (via npar_gt90)
-  # "20-50" and "51-250" groupings based on smallerCountBins (via npar_gt90)
+  # "20-50" and "51-193" groupings based on smallerCountBins (via npar_gt90)
   fig5_data <- data_BMPCat_s_fg_Ngt50 %>%
     filter(Quartile == 0.5) %>%
     mutate(curve_group = case_when(
-      facet_group == "TSS" & npar_gt50 == "51-250" ~ "TSS: 51-250 events",
+      facet_group == "TSS" & npar_gt50 == "51-193" ~ "TSS: 51-193 events",
       facet_group == "TSS" ~ "TSS: 20-50 events",
       .default = as.character(facet_group)
     )) %>%
     mutate(curve_group = factor(curve_group, levels = c(
-      "Copper", "Phosphorus: Inflow", "Phosphorus: Outflow", "TSS: 20-50 events", "TSS: 51-250 events"
+      "Copper", "Phosphorus: Inflow", "Phosphorus: Outflow", "TSS: 20-50 events", "TSS: 51-193 events"
     ))) %>%
     group_by(N_numerical, curve_group) %>%
     summarise(
@@ -815,7 +977,7 @@ cdf_rzf_facet <- ggplot(cv_rzf, aes(x = coefficientOfVariation, color = Rain_Zon
     rename(n_subset = N_numerical, n_obs = n) %>%
     select(n_subset, curve_group, rpd, sd, moe_95, n_obs)
 
-  #write.csv(fig5_data, here::here("Data", "Figure 4_50th Percentile RPD Summary Statistics.csv"), row.names = FALSE)
+  #write.csv(fig5_data, here::here("Data", "Figure 5_50th Percentile RPD Summary Statistics.csv"), row.names = FALSE)
 
   set.seed(36)  # ensures reproducible jitter positions for geom_point
 
@@ -970,3 +1132,167 @@ plot_data_BDL %>%
 
 ggsave(here::here("Plots", "Final", "num_samples_percent_below_detect_summary_low_percentiles.png"), height = 40, width = 50, units = "cm")
 
+######## Supplemental Materials ###################################################################
+
+# figure 4 but with sample size classes shown as 4 separate curves
+  # 20-30, 31-50, 51-90, 91-193
+data_BMPCat_s_fg_Nclass <- data_BMPCat_s %>%
+    select(Rain_Zone, Location, N_numerical, Quartile, Analyte, Flow, NumObservations, NumObservationsBelowDetect, rpd) %>%
+    # create facet group (Analyte + Flow for Phosphorus, Analyte for Copper & TSS)
+    mutate(facet_group = case_when(
+      Analyte == "Phosphorus" ~ paste0(Analyte, ": ", Flow),
+      .default = Analyte
+    )) %>%
+    mutate(N_numerical = factor(N_numerical, levels = c(5, 10, 15, 20, 25))) %>%
+    mutate(Quartile = factor(Quartile, levels = c(0.1, 0.25, 0.5, 0.75, 0.9))) %>%
+    mutate(facet_group = factor(facet_group, levels = c("Copper", "Phosphorus: Inflow",
+                                                        "Phosphorus: Outflow", "TSS"))) %>%
+    # sample size classes based on NumObservations
+    mutate(Nclass = case_when(
+      NumObservations >= 20 & NumObservations <= 30  ~ "20-30",
+      NumObservations >= 31 & NumObservations <= 50  ~ "31-50",
+      NumObservations >= 51 & NumObservations <= 90  ~ "51-90",
+      NumObservations >= 91 & NumObservations <= 193 ~ "91-193"
+    )) %>%
+    mutate(Nclass = factor(Nclass, levels = c("20-30", "31-50", "51-90", "91-193")))
+
+plot_data_by_Nclass <- data_BMPCat_s_fg_Nclass %>%
+  group_by(N_numerical, Quartile, facet_group, Nclass) %>%
+  summarise(
+    sd  = sd(rpd, na.rm = TRUE),
+    n = n(),
+    rpd = mean(rpd, na.rm = TRUE),
+    .groups = "drop"
+  ) %>%
+  mutate(
+    se         = sd / sqrt(n),
+    moe_95 = qt(0.975, df = n - 1) * se # margin of error for 95% confidence interval
+  ) %>%
+  select(-se)
+
+bin_levels_byNclass <- c("20-30", "31-50", "51-90", "91-193")
+
+set.seed(36)  # ensures reproducible jitter positions for geom_point
+
+  # panel tags (a, b, c, ...), ordered left-to-right, top-to-bottom across the
+  # Quartile (rows) x facet_group (columns) grid
+  panel_labels_by_Nclass <- expand.grid(
+    facet_group = c("Copper", "Phosphorus: Inflow", "Phosphorus: Outflow", "TSS"),
+    Quartile    = c("10th Percentile", "25th Percentile", "50th Percentile", "75th Percentile", "90th Percentile")
+  ) %>%
+    mutate(label = letters[row_number()])
+
+  plot_data_by_Nclass %>%
+    mutate(Quartile = case_when(
+      Quartile == 0.1 ~ "10th Percentile",
+      Quartile == 0.25 ~ "25th Percentile",
+      Quartile == 0.5 ~ "50th Percentile",
+      Quartile == 0.75 ~ "75th Percentile",
+      Quartile == 0.9 ~ "90th Percentile"
+    )) %>%
+    ggplot(aes(x = N_numerical, y = rpd, color = Nclass, group = Nclass)) +
+    geom_line(stat = "smooth", method = "lm", se = FALSE, formula = y ~ I(log(x)), alpha = 0.7, size = 1.5) +
+    geom_errorbar(aes(ymin = rpd - moe_95, ymax = rpd + moe_95), width = 0.2, size = 1.5,
+                  position = position_jitter(width = 0.15, height = 0, seed = 38)) +
+    geom_point(aes(shape = Nclass), size = 9, fill = NA, stroke = 2,
+               position = position_jitter(width = 0.15, height = 0, seed = 38)) +
+    scale_shape_manual(name = "Number of Events in Parent Dataset",
+                       labels = bin_levels_byNclass,
+                       values = c(16, 17, 15, 18)) + # solid shapes: 17, 15, 4, 18,
+    scale_size_manual(name = "Number of Events in Parent Dataset",
+                       values = c(8, 8, 8, 11)) + #9, 9, 9, 11,
+    facet_grid(Quartile~facet_group) +
+    # panel letter labels
+    geom_text(data = panel_labels_by_Nclass,
+              aes(x = Inf, y = Inf, label = label),
+              inherit.aes = FALSE, hjust = 1.6, vjust = 1.5,
+              fontface = "bold", size = 14) +
+    scale_y_continuous(breaks = seq(0, 60, 20), minor_breaks = seq(0, 60, 10)) +
+    coord_cartesian(ylim = c(0,60)) +
+    xlab("Number of Monitored Events in Data Subset") +
+    ylab("Mean Relative Percent Difference (%)") +
+    theme_bw(base_size = 40) +  
+    theme(strip.placement = "outside", panel.spacing = unit(1, "lines"), strip.background = element_blank()) + 
+    theme(legend.position = "top", legend.box = "vertical") +
+    guides(fill = "none") +
+    scale_color_manual(name = "Number of Events in Parent Dataset",
+                       labels = bin_levels_byNclass,
+                       values = c("#87d069", "#41B6C4", "#225EA8", "#081D58")) + #"#87d069", "#41B6C4", "#1D91C0", "#225EA8", , "#000000"
+    theme(legend.position = "top") +
+    theme(panel.grid.minor = element_line(color = "grey75", linewidth = 0.7),
+          panel.grid.major = element_line(color = "grey75", linewidth = 0.7),
+          axis.text.x = element_text(angle = 45, hjust = 1),
+          strip.text = element_text(face = "bold")
+    )
+
+  ggsave(here::here("Plots", "Final", "num_samples_analyte_PFlow_summary_aggregated_by_Nclass.png"), width = 66, height = 70, units = "cm")
+  
+######## Graphical Abstract: Mean RPD for 50th percentile for all analytes #####################################################
+
+  # one rpd curve per analyte for simplicity
+  ga_data <- data_BMPCat_s %>%
+    filter(Quartile == 0.5) %>%
+    mutate(curve_group = Analyte) %>%
+    mutate(curve_group = factor(curve_group, levels = c(
+      "Copper", "Phosphorus", "TSS"
+    ))) %>%
+    group_by(N_numerical, curve_group) %>%
+    summarise(
+      sd  = sd(rpd, na.rm = TRUE),
+      n = n(),
+      rpd = mean(rpd, na.rm = TRUE),
+      .groups = "drop"
+    ) %>%
+    mutate(
+      se         = sd / sqrt(n),
+      moe_95 = qt(0.975, df = n - 1) * se # margin of error for 95% confidence interval
+    ) %>%
+    select(-se)
+
+  set.seed(36)  # ensures reproducible jitter positions for geom_point
+
+  ga_data %>%
+    ggplot(aes(x = N_numerical, y = rpd, color = curve_group, group = curve_group)) + # 
+    geom_line(stat = "smooth", method = "lm", se = FALSE, formula = y ~ I(log(x)), alpha = 0.7, size = 3) +
+    geom_errorbar(aes(ymin = rpd - moe_95, ymax = rpd + moe_95), width = 0.2, size = 1.5, linetype = "solid") + #,
+                  #position = position_jitter(width = 0.2, height = 0, seed = 38)
+    geom_point(aes(shape = curve_group, size = curve_group), stroke = 2) + #, #alpha = 0.7, 
+               #position = position_jitter(width = 0.2, height = 0, seed = 38)
+    scale_shape_manual(name = "",
+                       #values = c(16, 17, 15, 18, 4)) + # solid shapes
+                       values = c(1, 2, 5)) +  # hollow shapes
+    scale_size_manual(name = "",
+                       values = c(11, 11, 13)) + # if using shape=18, use size=13
+    guides(size = "none",
+           shape = guide_legend(override.aes = list(size = 8))) + #, nrow = 2, byrow = TRUE
+           #color = guide_legend(nrow = 2, byrow = TRUE),
+           #linetype = guide_legend(nrow = 2, byrow = TRUE)) +
+    scale_color_manual(name = "",
+                       values = c("#3F007D", "#006D2C", "#225EA8")) +
+    scale_y_continuous(breaks = seq(0, 60, 10), minor_breaks = seq(0, 55, 50)) +
+    coord_cartesian(ylim = c(0,35)) +
+    xlab("Number of Monitored Events in Subsample") +
+    ylab("Mean Relative % Difference\nfrom Parent Dataset") +
+    ggtitle(expression(50^th~"Percentile Event Mean Concentration")) +
+    theme_bw(base_size = 50) + theme(legend.position = "top", legend.box = "vertical") +
+    guides(fill = "none") +
+    theme(panel.grid.minor = element_line(color = "grey75", linewidth = 0.7),
+          panel.grid.major = element_line(color = "grey75", linewidth = 0.7),
+          plot.title = element_text(size = 55, hjust = 0.5),
+          plot.title.position = "plot"
+    )
+
+  ggsave(here::here("Plots", "Final", "GraphicalAbstractFig.png"), width = 42, height = 33.3, units = "cm", dpi = 350)
+
+# calc stats by combining Cu, TP
+ga_data_fmt <- ga_data %>%
+  mutate(stat_group = case_when(
+    curve_group == "Copper" ~ "Cu, TP",
+    curve_group == "Phosphorus" ~ "Cu, TP",
+    .default = "TSS"
+  )) %>%
+  group_by(stat_group, N_numerical) %>%
+  summarise(mean_rpd = mean(rpd), n = n())
+
+# save as CSV
+#write.csv(ga_data_fmt, here::here("Data", "GraphicalAbs_50th Percentile RPD Summary Statistics.csv"), row.names = FALSE)
