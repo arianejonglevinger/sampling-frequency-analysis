@@ -1,0 +1,684 @@
+Rain_Zone,Location,Analyte,Flow,BMP_Category_long,NumObservations,smallerCountBins,SiteName,City,Country,State,MinYear,MaxYear,MedYear
+9,1213897945_CO,Copper,Outflow,Porous Pavement,193,>90,Lakewood Shops,Lakewood,US,CO,2005,2013,2009
+9,1213897945_CO,TSS,Outflow,Porous Pavement,186,>90,Lakewood Shops,Lakewood,US,CO,2005,2013,2009
+9,1213897945_CO,Phosphorus,Outflow,Porous Pavement,174,>90,Lakewood Shops,Lakewood,US,CO,2005,2013,2009
+1,761913947_ZZ,Phosphorus,Outflow,Grass Swale,168,>90,Lakeview 2,Mississauga,CA,ZZ,2012,2015,2014
+9,356302650_CO,Phosphorus,Outflow,Wetland Basin,162,>90,Cottonwood Wetlands,Aurora,US,CO,1992,2022,2007
+9,356302650_CO,Phosphorus,Inflow,Wetland Basin,154,>90,Cottonwood Wetlands,Aurora,US,CO,1992,2022,2007
+9,356302650_CO,TSS,Outflow,Wetland Basin,125,>90,Cottonwood Wetlands,Aurora,US,CO,2001,2022,2010
+9,1303384253_CO,Phosphorus,Inflow,Wetland Basin,125,>90,Cottonwood Wetlands,Aurora,US,CO,2002,2022,2010
+9,1303384253_CO,TSS,Inflow,Wetland Basin,117,>90,Cottonwood Wetlands,Aurora,US,CO,2003,2022,2011
+9,1303384253_CO,Phosphorus,Outflow,Wetland Basin,115,>90,Cottonwood Wetlands,Aurora,US,CO,2002,2022,2010
+9,1303384253_CO,TSS,Outflow,Wetland Basin,106,>90,Cottonwood Wetlands,Aurora,US,CO,2003,2022,2011
+3,-1059537853_FL,Phosphorus,Outflow,Grass Swale,105,>90,Florida Aquarium Parking Lot,Tampa,US,FL,1998,2000,1999
+9,356302650_CO,TSS,Inflow,Wetland Basin,104,>90,Cottonwood Wetlands,Aurora,US,CO,2001,2022,2010
+9,1789503719_CO,TSS,Inflow,Bioretention,98,>90,21st and Iris Rain Garden,Lakewood,US,CO,2011,2018,2014
+9,1789503719_CO,Copper,Inflow,Bioretention,96,>90,21st and Iris Rain Garden,Lakewood,US,CO,2011,2018,2014
+9,1789503719_CO,Phosphorus,Inflow,Bioretention,96,>90,21st and Iris Rain Garden,Lakewood,US,CO,2011,2018,2014
+3,-497102667_FL,Phosphorus,Outflow,Grass Swale,92,>90,Florida Aquarium Parking Lot,Tampa,US,FL,1998,2000,1999
+3,-1059537853_FL,TSS,Outflow,Grass Swale,91,>90,Florida Aquarium Parking Lot,Tampa,US,FL,1998,2000,1999
+1,1110495534_WI,TSS,Outflow,Manufactured Device,90,61-90,"Madison, WI, Stormceptor",Madison,US,WI,1996,1997,1997
+9,1789503719_CO,Phosphorus,Outflow,Bioretention,87,61-90,21st and Iris Rain Garden,Lakewood,US,CO,2011,2018,2014
+1,761913947_ZZ,TSS,Outflow,Grass Swale,84,61-90,Lakeview 2,Mississauga,CA,ZZ,2012,2015,2014
+9,1789503719_CO,Copper,Outflow,Bioretention,84,61-90,21st and Iris Rain Garden,Lakewood,US,CO,2011,2018,2014
+9,1789503719_CO,TSS,Outflow,Bioretention,83,61-90,21st and Iris Rain Garden,Lakewood,US,CO,2011,2018,2014
+1,202000105_WI,Phosphorus,Inflow,Porous Pavement,79,61-90,MadisonPavementSite,Madison,US,WI,2016,2018,2017
+1,202000105_WI,TSS,Inflow,Porous Pavement,79,61-90,MadisonPavementSite,Madison,US,WI,2016,2018,2017
+1,202000104_WI,TSS,Inflow,Porous Pavement,79,61-90,MadisonPavementSite,Madison,US,WI,2016,2018,2017
+1,202000104_WI,Phosphorus,Inflow,Porous Pavement,79,61-90,MadisonPavementSite,Madison,US,WI,2016,2018,2017
+1,202000106_WI,TSS,Inflow,Porous Pavement,79,61-90,MadisonPavementSite,Madison,US,WI,2016,2018,2017
+1,202000106_WI,Phosphorus,Inflow,Porous Pavement,79,61-90,MadisonPavementSite,Madison,US,WI,2016,2018,2017
+3,-497102667_FL,TSS,Outflow,Grass Swale,76,61-90,Florida Aquarium Parking Lot,Tampa,US,FL,1998,2000,1999
+1,202000106_WI,TSS,Outflow,Porous Pavement,76,61-90,MadisonPavementSite,Madison,US,WI,2016,2018,2017
+1,202000106_WI,Phosphorus,Outflow,Porous Pavement,76,61-90,MadisonPavementSite,Madison,US,WI,2016,2018,2017
+9,1615281267_CO,TSS,Outflow,Porous Pavement,72,61-90,UDFCD Modular Porous Pavement 94 to 04,Lakewood,US,CO,1995,2004,1997.5
+7,-1797464674_WA,Copper,Inflow,Grass Swale,70,61-90,Klineline Bridge Replacement Treatment Train,Vancouver,US,WA,2011,2012,2012
+7,1411011730_WA,TSS,Outflow,Manufactured Device,70,61-90,Klineline Bridge Replacement Treatment Train,Vancouver,US,WA,2011,2012,2012
+9,1615281267_CO,Phosphorus,Outflow,Porous Pavement,70,61-90,UDFCD Modular Porous Pavement 94 to 04,Lakewood,US,CO,1995,2004,1998
+7,1411011730_WA,Phosphorus,Outflow,Manufactured Device,70,61-90,Klineline Bridge Replacement Treatment Train,Vancouver,US,WA,2011,2012,2012
+7,1411011730_WA,Copper,Outflow,Manufactured Device,70,61-90,Klineline Bridge Replacement Treatment Train,Vancouver,US,WA,2011,2012,2012
+7,-1797464674_WA,TSS,Inflow,Grass Swale,70,61-90,Klineline Bridge Replacement Treatment Train,Vancouver,US,WA,2011,2012,2012
+7,-1797464674_WA,Phosphorus,Inflow,Grass Swale,70,61-90,Klineline Bridge Replacement Treatment Train,Vancouver,US,WA,2011,2012,2012
+9,1615281267_CO,Copper,Outflow,Porous Pavement,70,61-90,UDFCD Modular Porous Pavement 94 to 04,Lakewood,US,CO,1995,2004,1998
+7,-371286772_WA,TSS,Inflow,Detention Basin,69,61-90,Boeing Computer Services,Seattle,US,WA,1984,1985,1985
+1,202000105_WI,Phosphorus,Outflow,Porous Pavement,68,61-90,MadisonPavementSite,Madison,US,WI,2016,2018,2017
+1,202000105_WI,TSS,Outflow,Porous Pavement,68,61-90,MadisonPavementSite,Madison,US,WI,2016,2018,2017
+5,714830611_TX,Phosphorus,Inflow,Grass Swale,67,61-90,BL,Austin,US,TX,2000,2005,2004
+5,714830611_TX,TSS,Inflow,Grass Swale,67,61-90,BL,Austin,US,TX,2000,2005,2004
+3,-749550946_FL,Phosphorus,Inflow,Manufactured Device,64,61-90,Broadway Outfall,Temple Terrace,US,FL,2002,2003,2003
+6,899326306_CA,Phosphorus,Inflow,Retention Pond,64,61-90,Dem. Urban SW Treatment (DUST) Marsh,Fremont,US,CA,1984,1986,1985
+6,899326306_CA,TSS,Inflow,Retention Pond,63,61-90,Dem. Urban SW Treatment (DUST) Marsh,Fremont,US,CA,1984,1986,1985
+9,-875791527_CO,TSS,Inflow,Retention Pond,62,61-90,Shop Creek Wetland-Pond (1990-94),Aurora,US,CO,1990,1994,1991
+3,-1800346028_FL,Phosphorus,Outflow,Wetland Basin,61,61-90,Broadway Outfall,Temple Terrace,US,FL,2002,2003,2003
+3,-749550946_FL,TSS,Inflow,Manufactured Device,60,31-60,Broadway Outfall,Temple Terrace,US,FL,2002,2003,2003
+7,-1151112381_WA,Phosphorus,Outflow,Media Filter,58,31-60,Boulder Creek,Sammamish,US,WA,2009,2011,2010
+3,-1800346028_FL,TSS,Outflow,Wetland Basin,58,31-60,Broadway Outfall,Temple Terrace,US,FL,2002,2003,2003
+7,-1151112381_WA,TSS,Outflow,Media Filter,58,31-60,Boulder Creek,Sammamish,US,WA,2009,2011,2010
+7,-1151112381_WA,Copper,Outflow,Media Filter,58,31-60,Boulder Creek,Sammamish,US,WA,2009,2011,2010
+9,1661183142_CO,TSS,Outflow,Wetland Channel,58,31-60,Shop Creek Wetland-Pond (1990-94),Aurora,US,CO,1990,1994,1991
+9,609368732_CO,Copper,Outflow,Green Roof,56,31-60,Denver Botanic Gardens Green Roof,Denver,US,CO,2011,2018,2014
+9,609368732_CO,Phosphorus,Outflow,Green Roof,56,31-60,Denver Botanic Gardens Green Roof,Denver,US,CO,2011,2018,2014
+9,-875791527_CO,Copper,Inflow,Retention Pond,55,31-60,Shop Creek Wetland-Pond (1990-94),Aurora,US,CO,1990,1992,1991
+3,-2131034431_FL,TSS,Outflow,Retention Pond,55,31-60,Cockroach Bay Agricultural Site,Ruskin,US,FL,1998,2001,2000
+3,-2131034431_FL,Phosphorus,Outflow,Retention Pond,55,31-60,Cockroach Bay Agricultural Site,Ruskin,US,FL,1998,2001,2000
+7,869929866_WA,Phosphorus,Inflow,Detention Basin,54,31-60,Boulder Creek,Sammamish,US,WA,2009,2011,2010
+7,869929866_WA,Copper,Inflow,Detention Basin,54,31-60,Boulder Creek,Sammamish,US,WA,2009,2011,2010
+7,869929866_WA,TSS,Inflow,Detention Basin,54,31-60,Boulder Creek,Sammamish,US,WA,2009,2011,2010
+1,530401475_CT,TSS,Inflow,Manufactured Device,53,31-60,Timothy Edwards Middle School,South Windsor,US,CT,1999,2001,2000
+5,1166104123_TX,Copper,Outflow,Permeable Friction,53,31-60,Texas PFC 1,Austin,US,TX,2004,2009,2007
+5,1166104123_TX,TSS,Outflow,Permeable Friction,53,31-60,Texas PFC 1,Austin,US,TX,2004,2009,2007
+6,899326306_CA,Phosphorus,Outflow,Retention Pond,53,31-60,Dem. Urban SW Treatment (DUST) Marsh,Fremont,US,CA,1984,1986,1985
+1,530401475_CT,Phosphorus,Inflow,Manufactured Device,53,31-60,Timothy Edwards Middle School,South Windsor,US,CT,1999,2001,2000
+9,609368732_CO,TSS,Outflow,Green Roof,53,31-60,Denver Botanic Gardens Green Roof,Denver,US,CO,2011,2018,2014
+6,899326306_CA,TSS,Outflow,Retention Pond,53,31-60,Dem. Urban SW Treatment (DUST) Marsh,Fremont,US,CA,1984,1986,1985
+3,1583890824_FL,TSS,Inflow,Media Filter,51,31-60,Megginnis Creek,Tallahassee,US,FL,1983,1987,1985
+3,-751735465_FL,TSS,Outflow,Retention Pond,51,31-60,Derby Ditch,Auburndale,US,FL,1997,1998,1997
+9,1661183142_CO,Copper,Outflow,Wetland Channel,51,31-60,Shop Creek Wetland-Pond (1990-94),Aurora,US,CO,1990,1992,1991
+3,-751735465_FL,Phosphorus,Outflow,Retention Pond,51,31-60,Derby Ditch,Auburndale,US,FL,1996,1998,1997
+3,1583890824_FL,TSS,Outflow,Media Filter,50,31-60,Megginnis Creek,Tallahassee,US,FL,1983,1987,1985
+3,-92682729_AL,TSS,Inflow,Manufactured Device,50,31-60,Bama Belle UFF,Tuscaloosa,US,AL,2010,2013,2012
+3,-92682729_AL,Phosphorus,Outflow,Manufactured Device,50,31-60,Bama Belle UFF,Tuscaloosa,US,AL,2010,2013,2012
+3,-92682729_AL,TSS,Outflow,Manufactured Device,50,31-60,Bama Belle UFF,Tuscaloosa,US,AL,2010,2013,2012
+3,-92682729_AL,Phosphorus,Inflow,Manufactured Device,50,31-60,Bama Belle UFF,Tuscaloosa,US,AL,2010,2013,2012
+3,1789682252_FL,Phosphorus,Outflow,Grass Swale,50,31-60,Florida Aquarium Parking Lot,Tampa,US,FL,1998,2000,1999
+9,1341488229_CO,Copper,Inflow,Detention Basin,49,31-60,Grant Ranch,Littleton,US,CO,2009,2013,2010
+9,1341488229_CO,Phosphorus,Inflow,Detention Basin,49,31-60,Grant Ranch,Littleton,US,CO,2009,2013,2010
+9,1341488229_CO,TSS,Inflow,Detention Basin,48,31-60,Grant Ranch,Littleton,US,CO,2009,2013,2010
+3,1072980301_FL,Copper,Outflow,Detention Basin,47,31-60,The Reserve at DeBary,DeBary,US,FL,1997,1998,1997
+3,1072980301_FL,Phosphorus,Outflow,Detention Basin,47,31-60,The Reserve at DeBary,DeBary,US,FL,1997,1998,1997
+3,1582980719_FL,Copper,Outflow,Retention Pond,47,31-60,DeBary Detention with Filtration Pond,DeBary,US,FL,1992,1992,1992
+2,-2135647706_MD,TSS,Outflow,Wetland Basin,47,31-60,Queen Anne's Pond,Centreville,US,MD,1987,1989,1988
+2,-2135647706_MD,Phosphorus,Outflow,Wetland Basin,47,31-60,Queen Anne's Pond,Centreville,US,MD,1987,1989,1988
+3,1582980719_FL,Phosphorus,Outflow,Retention Pond,47,31-60,DeBary Detention with Filtration Pond,DeBary,US,FL,1992,1992,1992
+3,1072980301_FL,TSS,Outflow,Detention Basin,47,31-60,The Reserve at DeBary,DeBary,US,FL,1997,1998,1997
+5,1490445955_TX,TSS,Inflow,Manufactured Device,46,31-60,Convention Center,Austin,US,TX,1995,1998,1997
+2,1010839656_NC,TSS,Outflow,Grass Swale,46,31-60,NCDOT I-40 Site A,Benson,US,NC,2008,2010,2009
+3,1582980719_FL,TSS,Outflow,Retention Pond,46,31-60,DeBary Detention with Filtration Pond,DeBary,US,FL,1992,1992,1992
+2,1010839656_NC,Phosphorus,Outflow,Grass Swale,46,31-60,NCDOT I-40 Site A,Benson,US,NC,2008,2010,2009
+1,-1245604459_ZZ,Phosphorus,Outflow,Bioretention,45,31-60,IX-4,Mississauga,CA,ZZ,2014,2015,2014
+1,1110495534_WI,TSS,Inflow,Manufactured Device,45,31-60,"Madison, WI, Stormceptor",Madison,US,WI,1996,1997,1997
+1,-2092564571_WI,TSS,Inflow,Manufactured Device,44,31-60,USGS_WI_HSD,Milwaukee,US,WI,2003,2004,2003
+1,-2092564571_WI,TSS,Outflow,Manufactured Device,44,31-60,USGS_WI_HSD,Milwaukee,US,WI,2003,2004,2003
+1,-254220822_WI,TSS,Outflow,Manufactured Device,44,31-60,WI_SFD,Madison,US,WI,2005,2007,2006
+9,1341488229_CO,TSS,Outflow,Detention Basin,44,31-60,Grant Ranch,Littleton,US,CO,2009,2013,2010
+1,-254220822_WI,TSS,Inflow,Manufactured Device,44,31-60,WI_SFD,Madison,US,WI,2005,2007,2006
+9,-875791527_CO,Phosphorus,Inflow,Retention Pond,44,31-60,Shop Creek Wetland-Pond (1990-94),Aurora,US,CO,1990,1994,1990.5
+3,-1217647869_FL,TSS,Outflow,Wetland Channel,44,31-60,Megginnis Creek,Tallahassee,US,FL,1985,1987,1985
+1,-1895414596_WI,TSS,Outflow,Manufactured Device,44,31-60,Madison Gas Electric Company,Madison,US,WI,2005,2007,2006
+5,1490445955_TX,Phosphorus,Inflow,Manufactured Device,44,31-60,Convention Center,Austin,US,TX,1995,1998,1997
+1,202000103_WI,TSS,Outflow,Porous Pavement,44,31-60,MadisonPavementSite,Madison,US,WI,2014,2016,2015
+1,-1895414596_WI,TSS,Inflow,Manufactured Device,44,31-60,Madison Gas Electric Company,Madison,US,WI,2005,2007,2006
+3,-1217647869_FL,TSS,Inflow,Wetland Channel,44,31-60,Megginnis Creek,Tallahassee,US,FL,1985,1987,1985
+7,1831195035_WA,TSS,Inflow,Retention Pond,44,31-60,Snohomish Cascade,Mill Creek,US,WA,2009,2012,2010
+1,202000101_WI,TSS,Inflow,Porous Pavement,43,31-60,MadisonPavementSite,Madison,US,WI,2014,2016,2015
+2,1007496756_VA,TSS,Outflow,Grass Swale,43,31-60,29 North Swale A,Charlottesville,US,VA,1992,1992,1992
+5,1166104123_TX,Phosphorus,Outflow,Permeable Friction,43,31-60,Texas PFC 1,Austin,US,TX,2004,2009,2006
+1,202000103_WI,Phosphorus,Outflow,Porous Pavement,43,31-60,MadisonPavementSite,Madison,US,WI,2014,2016,2015
+1,202000102_WI,TSS,Inflow,Porous Pavement,43,31-60,MadisonPavementSite,Madison,US,WI,2014,2016,2015
+9,1341488229_CO,Phosphorus,Outflow,Detention Basin,43,31-60,Grant Ranch,Littleton,US,CO,2009,2013,2010
+9,1341488229_CO,Copper,Outflow,Detention Basin,43,31-60,Grant Ranch,Littleton,US,CO,2009,2013,2010
+1,202000103_WI,TSS,Inflow,Porous Pavement,43,31-60,MadisonPavementSite,Madison,US,WI,2014,2016,2015
+9,-111085006_CO,Phosphorus,Inflow,Retention Pond,42,31-60,Shop Creek Wetland-Pond (1995-97),Aurora,US,CO,1995,1996,1995
+3,548635322_FL,Phosphorus,Inflow,Retention Pond,42,31-60,The Tampa Office Pond,Tampa,US,FL,1994,1995,1994
+3,548635322_FL,TSS,Inflow,Retention Pond,42,31-60,The Tampa Office Pond,Tampa,US,FL,1994,1995,1994
+1,202000101_WI,Phosphorus,Inflow,Porous Pavement,42,31-60,MadisonPavementSite,Madison,US,WI,2014,2016,2015
+1,202000102_WI,Phosphorus,Inflow,Porous Pavement,42,31-60,MadisonPavementSite,Madison,US,WI,2014,2016,2015
+3,967950500_FL,Phosphorus,Inflow,Media Filter,42,31-60,Florida Aquarium Test Site,Tampa,US,FL,2000,2003,2002
+1,1312629745_MN,TSS,Inflow,Wetland Channel,42,31-60,Villa Park MN,Roseville,US,MN,2007,2008,2007
+1,1312629745_MN,Phosphorus,Inflow,Wetland Channel,42,31-60,Villa Park MN,Roseville,US,MN,2007,2008,2007
+3,548635322_FL,TSS,Outflow,Retention Pond,42,31-60,The Tampa Office Pond,Tampa,US,FL,1994,1995,1994
+3,548635322_FL,Phosphorus,Outflow,Retention Pond,42,31-60,The Tampa Office Pond,Tampa,US,FL,1994,1995,1994
+1,202000103_WI,Phosphorus,Inflow,Porous Pavement,42,31-60,MadisonPavementSite,Madison,US,WI,2014,2016,2015
+2,1926923448_VA,TSS,Inflow,Grass Swale,41,31-60,29 North Swale A,Charlottesville,US,VA,1992,1992,1992
+2,-1386928737_NC,TSS,Outflow,Wetland Channel,41,31-60,NCDOT I-40 Site B,Benson,US,NC,2008,2010,2009
+9,156559051_CO,Phosphorus,Outflow,Wetland Channel,41,31-60,Shop Creek Wetland-Pond (1995-97),Aurora,US,CO,1995,1996,1995
+2,1926923448_VA,TSS,Outflow,Grass Swale,41,31-60,29 North Swale A,Charlottesville,US,VA,1992,1992,1992
+2,-1386928737_NC,Phosphorus,Outflow,Wetland Channel,41,31-60,NCDOT I-40 Site B,Benson,US,NC,2008,2010,2009
+3,-1497115633_FL,Phosphorus,Outflow,Grass Swale,40,31-60,Florida Aquarium Parking Lot,Tampa,US,FL,1998,2000,1999
+7,1831195035_WA,Phosphorus,Outflow,Retention Pond,40,31-60,Snohomish Cascade,Mill Creek,US,WA,2009,2012,2010
+5,44508055_TX,TSS,Outflow,Retention Pond,40,31-60,Convention Center,Austin,US,TX,1995,1998,1997
+7,1831195035_WA,TSS,Outflow,Retention Pond,40,31-60,Snohomish Cascade,Mill Creek,US,WA,2009,2012,2010
+7,1831195035_WA,Phosphorus,Inflow,Retention Pond,40,31-60,Snohomish Cascade,Mill Creek,US,WA,2009,2012,2010
+1,1453962954_MI,Phosphorus,Inflow,Retention Pond,40,31-60,"NURP, Lansing MI, Waverly Ret Basin",Lansing,US,MI,1980,1981,1981
+9,1661183142_CO,Phosphorus,Outflow,Wetland Channel,40,31-60,Shop Creek Wetland-Pond (1990-94),Aurora,US,CO,1990,1994,1991
+2,266044994_NC,TSS,Outflow,Wetland Channel,40,31-60,NCDOT I-40 Site C,Faison,US,NC,2008,2010,2009
+3,1789682252_FL,TSS,Outflow,Grass Swale,40,31-60,Florida Aquarium Parking Lot,Tampa,US,FL,1998,2000,1999
+2,266044994_NC,Phosphorus,Outflow,Wetland Channel,40,31-60,NCDOT I-40 Site C,Faison,US,NC,2008,2010,2009
+5,-718040497_TX,TSS,Inflow,Detention Basin,40,31-60,BR,Austin,US,TX,1993,2007,1995
+7,1831195035_WA,Copper,Outflow,Retention Pond,40,31-60,Snohomish Cascade,Mill Creek,US,WA,2009,2012,2010
+3,967950500_FL,TSS,Inflow,Media Filter,40,31-60,Florida Aquarium Test Site,Tampa,US,FL,2000,2003,2002
+5,44508055_TX,Phosphorus,Outflow,Retention Pond,40,31-60,Convention Center,Austin,US,TX,1995,1998,1997
+2,-2135647706_MD,Phosphorus,Inflow,Wetland Basin,39,31-60,Queen Anne's Pond,Centreville,US,MD,1987,1989,1988
+7,201901301_WA,TSS,Inflow,Grass Strip,39,31-60,Everett,Everett,US,WA,2013,2018,2016
+7,1831195035_WA,Copper,Inflow,Retention Pond,39,31-60,Snohomish Cascade,Mill Creek,US,WA,2009,2012,2010
+2,-2135647706_MD,TSS,Inflow,Wetland Basin,39,31-60,Queen Anne's Pond,Centreville,US,MD,1987,1989,1988
+1,1727064429_PA,Copper,Inflow,Infiltration Basin,39,31-60,VU-Infiltration Trench,Radnor Township,US,PA,2008,2010,2009
+1,464202034_ZZ,Phosphorus,Outflow,Porous Pavement,38,31-60,IX-5,Mississauga,CA,ZZ,2014,2015,2014
+6,-1466349558_CA,Phosphorus,Inflow,Grass Strip,38,31-60,Sacramento RVTS,Sacramento,US,CA,2001,2008,2002
+6,-1203964548_CA,Phosphorus,Inflow,Grass Strip,38,31-60,Sacramento RVTS,Sacramento,US,CA,2001,2008,2003
+3,1724885033_FL,Phosphorus,Inflow,Manufactured Device,38,31-60,Lake O Sediment Demo,Okeechobee,US,FL,2002,2003,2003
+3,-1594013240_FL,Phosphorus,Inflow,Manufactured Device,38,31-60,Lake O Sediment Demo,Okeechobee,US,FL,2002,2003,2003
+9,201902101_CO,Copper,Inflow,Bioretention,38,31-60,River Run,Sheridan,US,CO,2017,2021,2019
+3,1664445868_FL,TSS,Inflow,Manufactured Device,38,31-60,Lake O Sediment Demo,Okeechobee,US,FL,2002,2003,2003
+6,908852039_CA,Phosphorus,Inflow,Grass Strip,38,31-60,Sacramento RVTS,Sacramento,US,CA,2001,2008,2003
+7,-754277822_WA,Phosphorus,Inflow,Retention Pond,38,31-60,Gibson Pond,Everett,US,WA,2009,2012,2010
+7,-910747072_WA,Copper,Outflow,Retention Pond,38,31-60,Center Pond,Everett,US,WA,2009,2012,2011
+7,-754277822_WA,TSS,Inflow,Retention Pond,38,31-60,Gibson Pond,Everett,US,WA,2009,2012,2010
+7,1027681509_WA,TSS,Inflow,Retention Pond,38,31-60,Emerald Meadows,Bothell,US,WA,2009,2012,2011
+3,1604339850_FL,Phosphorus,Inflow,Manufactured Device,38,31-60,Lake O Sediment Demo,Okeechobee,US,FL,2002,2003,2003
+2,1395841446_VA,TSS,Inflow,Grass Swale,38,31-60,29 North Swale A,Charlottesville,US,VA,1992,1992,1992
+7,-1271533783_WA,TSS,Outflow,Media Filter,38,31-60,Boulder Creek,Sammamish,US,WA,2010,2011,2010.5
+7,-1271533783_WA,Phosphorus,Outflow,Media Filter,38,31-60,Boulder Creek,Sammamish,US,WA,2010,2011,2010.5
+3,1604339850_FL,TSS,Inflow,Manufactured Device,38,31-60,Lake O Sediment Demo,Okeechobee,US,FL,2002,2003,2003
+7,77073608_WA,TSS,Inflow,Detention Basin,38,31-60,Boulder Creek,Sammamish,US,WA,2010,2011,2011
+6,-1466349558_CA,Copper,Inflow,Grass Strip,38,31-60,Sacramento RVTS,Sacramento,US,CA,2001,2008,2002
+7,77073608_WA,Phosphorus,Inflow,Detention Basin,38,31-60,Boulder Creek,Sammamish,US,WA,2010,2011,2011
+2,-487215506_NC,Phosphorus,Outflow,Grass Swale,38,31-60,NCDOT I-40 Site D,Faison,US,NC,2008,2010,2009
+3,1664445868_FL,Phosphorus,Inflow,Manufactured Device,38,31-60,Lake O Sediment Demo,Okeechobee,US,FL,2002,2003,2003
+6,-1203964548_CA,Copper,Inflow,Grass Strip,38,31-60,Sacramento RVTS,Sacramento,US,CA,2001,2008,2003
+7,201901301_WA,Phosphorus,Inflow,Grass Strip,38,31-60,Everett,Everett,US,WA,2014,2018,2016
+3,1724885033_FL,TSS,Inflow,Manufactured Device,38,31-60,Lake O Sediment Demo,Okeechobee,US,FL,2002,2003,2003
+6,440700621_CA,Copper,Inflow,Grass Strip,38,31-60,Sacramento RVTS,Sacramento,US,CA,2001,2008,2003
+3,-1594013240_FL,TSS,Inflow,Manufactured Device,38,31-60,Lake O Sediment Demo,Okeechobee,US,FL,2002,2003,2003
+1,202000101_WI,TSS,Outflow,Porous Pavement,38,31-60,MadisonPavementSite,Madison,US,WI,2014,2016,2015
+2,-487215506_NC,TSS,Outflow,Grass Swale,38,31-60,NCDOT I-40 Site D,Faison,US,NC,2008,2010,2009
+6,440700621_CA,Phosphorus,Inflow,Grass Strip,38,31-60,Sacramento RVTS,Sacramento,US,CA,2001,2008,2003
+6,908852039_CA,Copper,Inflow,Grass Strip,38,31-60,Sacramento RVTS,Sacramento,US,CA,2001,2008,2003
+7,-910747072_WA,Phosphorus,Outflow,Retention Pond,37,31-60,Center Pond,Everett,US,WA,2009,2012,2011
+7,-754277822_WA,Copper,Inflow,Retention Pond,37,31-60,Gibson Pond,Everett,US,WA,2009,2012,2010
+5,-1153896441_TX,Phosphorus,Inflow,Media Filter,37,31-60,JV,Austin,US,TX,1988,1997,1989
+3,1782781956_FL,Phosphorus,Outflow,Grass Swale,37,31-60,Florida Aquarium Parking Lot,Tampa,US,FL,1998,2000,1999
+1,-758940276_PA,Copper,Inflow,Porous Pavement,37,31-60,VU Porous Concrete Infiltration Basin,Villanova,US,PA,2003,2004,2003
+7,-910747072_WA,TSS,Outflow,Retention Pond,37,31-60,Center Pond,Everett,US,WA,2009,2012,2011
+6,-1466349558_CA,TSS,Inflow,Grass Strip,37,31-60,Sacramento RVTS,Sacramento,US,CA,2001,2008,2002
+9,201902101_CO,Phosphorus,Inflow,Bioretention,37,31-60,River Run,Sheridan,US,CO,2017,2021,2019
+6,908852039_CA,TSS,Inflow,Grass Strip,37,31-60,Sacramento RVTS,Sacramento,US,CA,2001,2008,2003
+6,-1203964548_CA,TSS,Inflow,Grass Strip,37,31-60,Sacramento RVTS,Sacramento,US,CA,2001,2008,2003
+7,77073608_WA,Copper,Inflow,Detention Basin,37,31-60,Boulder Creek,Sammamish,US,WA,2010,2011,2011
+6,440700621_CA,TSS,Inflow,Grass Strip,37,31-60,Sacramento RVTS,Sacramento,US,CA,2001,2008,2002.5
+7,1027681509_WA,Copper,Outflow,Retention Pond,37,31-60,Emerald Meadows,Bothell,US,WA,2009,2012,2011
+7,1027681509_WA,Copper,Inflow,Retention Pond,37,31-60,Emerald Meadows,Bothell,US,WA,2009,2012,2011
+7,1027681509_WA,TSS,Outflow,Retention Pond,37,31-60,Emerald Meadows,Bothell,US,WA,2009,2012,2011
+1,-758940276_PA,TSS,Inflow,Porous Pavement,37,31-60,VU Porous Concrete Infiltration Basin,Villanova,US,PA,2003,2004,2003
+9,201902101_CO,TSS,Inflow,Bioretention,36,31-60,River Run,Sheridan,US,CO,2017,2021,2019
+5,-1153896441_TX,TSS,Outflow,Media Filter,36,31-60,JV,Austin,US,TX,1988,1997,1989
+7,-1065386384_CA,TSS,Inflow,Grass Strip,36,31-60,Redding RVTS,Redding,US,CA,2001,2008,2003
+7,1027681509_WA,Phosphorus,Inflow,Retention Pond,36,31-60,Emerald Meadows,Bothell,US,WA,2009,2012,2011
+7,-838739535_CA,Phosphorus,Inflow,Grass Strip,36,31-60,Redding RVTS,Redding,US,CA,2001,2008,2003
+7,-838739535_CA,TSS,Inflow,Grass Strip,36,31-60,Redding RVTS,Redding,US,CA,2001,2008,2003
+7,607806237_WA,TSS,Outflow,Manufactured Device,36,31-60,Boeing Computer Services,Seattle,US,WA,1984,1985,1984.5
+7,-1758967266_CA,Phosphorus,Inflow,Grass Strip,36,31-60,Redding RVTS,Redding,US,CA,2001,2008,2003
+2,1926923448_VA,Phosphorus,Inflow,Grass Swale,36,31-60,29 North Swale A,Charlottesville,US,VA,1992,1992,1992
+5,-1153896441_TX,TSS,Inflow,Media Filter,36,31-60,JV,Austin,US,TX,1988,1997,1989
+1,202000101_WI,Phosphorus,Outflow,Porous Pavement,36,31-60,MadisonPavementSite,Madison,US,WI,2014,2016,2015
+9,-111085006_CO,TSS,Inflow,Retention Pond,36,31-60,Shop Creek Wetland-Pond (1995-97),Aurora,US,CO,1995,1996,1995.5
+7,-754277822_WA,Phosphorus,Outflow,Retention Pond,36,31-60,Gibson Pond,Everett,US,WA,2009,2012,2010
+7,-1065386384_CA,Phosphorus,Inflow,Grass Strip,36,31-60,Redding RVTS,Redding,US,CA,2001,2008,2003
+7,-1271533783_WA,Copper,Outflow,Media Filter,36,31-60,Boulder Creek,Sammamish,US,WA,2010,2011,2011
+2,937754979_NC,TSS,Outflow,Grass Strip,36,31-60,NCDOT I-40 Site A,Benson,US,NC,2008,2010,2009
+7,-1758967266_CA,TSS,Inflow,Grass Strip,36,31-60,Redding RVTS,Redding,US,CA,2001,2008,2003
+2,1926923448_VA,Phosphorus,Outflow,Grass Swale,36,31-60,29 North Swale A,Charlottesville,US,VA,1992,1992,1992
+2,1007496756_VA,Phosphorus,Outflow,Grass Swale,36,31-60,29 North Swale A,Charlottesville,US,VA,1992,1992,1992
+2,937754979_NC,Phosphorus,Outflow,Grass Strip,36,31-60,NCDOT I-40 Site A,Benson,US,NC,2008,2010,2009
+1,809024176_ZZ,Phosphorus,Outflow,Porous Pavement,35,31-60,IX-7,Mississauga,CA,ZZ,2014,2015,2014
+3,-1497115633_FL,TSS,Outflow,Grass Swale,35,31-60,Florida Aquarium Parking Lot,Tampa,US,FL,1998,2000,1999
+9,156559051_CO,TSS,Outflow,Wetland Channel,35,31-60,Shop Creek Wetland-Pond (1995-97),Aurora,US,CO,1995,1996,1996
+6,735665334_CA,Copper,Inflow,Grass Strip,35,31-60,San Rafael RVTS,Marinwood,US,CA,2001,2007,2003
+5,-1848687670_TX,Phosphorus,Inflow,Manufactured Device,35,31-60,SC,Austin,US,TX,2007,2009,2008
+7,375502076_WA,Phosphorus,Outflow,Wetland Basin,35,31-60,NW 117th St Wetland #1,Vancouver,US,WA,2010,2012,2011
+7,-1065386384_CA,Copper,Inflow,Grass Strip,35,31-60,Redding RVTS,Redding,US,CA,2001,2008,2003
+7,180828237_WA,Phosphorus,Outflow,Wetland Basin,35,31-60,NW 117th St Wetland #2,Vancouver,US,WA,2010,2012,2011
+7,180828237_WA,Copper,Outflow,Wetland Basin,35,31-60,NW 117th St Wetland #2,Vancouver,US,WA,2010,2012,2011
+7,1411011730_WA,TSS,Inflow,Manufactured Device,35,31-60,Klineline Bridge Replacement Treatment Train,Vancouver,US,WA,2011,2012,2012
+1,627107381_MN,TSS,Inflow,Retention Pond,35,31-60,McKnight Basin Detention Pond,Maplewood,US,MN,1987,1989,1988
+7,201901301_WA,Copper,Inflow,Grass Strip,35,31-60,Everett,Everett,US,WA,2014,2018,2016
+7,375502076_WA,Copper,Inflow,Wetland Basin,35,31-60,NW 117th St Wetland #1,Vancouver,US,WA,2010,2012,2011
+7,-1797464674_WA,Copper,Outflow,Grass Swale,35,31-60,Klineline Bridge Replacement Treatment Train,Vancouver,US,WA,2011,2012,2012
+6,735665334_CA,Phosphorus,Inflow,Grass Strip,35,31-60,San Rafael RVTS,Marinwood,US,CA,2001,2007,2003
+6,735665334_CA,TSS,Outflow,Grass Strip,35,31-60,San Rafael RVTS,Marinwood,US,CA,2001,2007,2003
+7,-1797464674_WA,Phosphorus,Outflow,Grass Swale,35,31-60,Klineline Bridge Replacement Treatment Train,Vancouver,US,WA,2011,2012,2012
+7,-748081246_WA,TSS,Inflow,Manufactured Device,35,31-60,POS Terminal 30,Seattle,US,WA,2011,2013,2012
+7,-1758967266_CA,Copper,Inflow,Grass Strip,35,31-60,Redding RVTS,Redding,US,CA,2001,2008,2003
+2,1084444993_NC,Phosphorus,Outflow,Grass Strip,35,31-60,NCDOT I-40 Site D,Faison,US,NC,2008,2010,2009
+7,-1797464674_WA,TSS,Outflow,Grass Swale,35,31-60,Klineline Bridge Replacement Treatment Train,Vancouver,US,WA,2011,2012,2012
+3,1072980301_FL,TSS,Inflow,Detention Basin,35,31-60,The Reserve at DeBary,DeBary,US,FL,1997,1998,1997
+5,-718040497_TX,Phosphorus,Inflow,Detention Basin,35,31-60,BR,Austin,US,TX,1993,1995,1994
+7,1411011730_WA,Copper,Inflow,Manufactured Device,35,31-60,Klineline Bridge Replacement Treatment Train,Vancouver,US,WA,2011,2012,2012
+3,1072980301_FL,Phosphorus,Inflow,Detention Basin,35,31-60,The Reserve at DeBary,DeBary,US,FL,1997,1998,1997
+7,375502076_WA,Copper,Outflow,Wetland Basin,35,31-60,NW 117th St Wetland #1,Vancouver,US,WA,2010,2012,2011
+6,735665334_CA,TSS,Inflow,Grass Strip,35,31-60,San Rafael RVTS,Marinwood,US,CA,2001,2007,2003
+7,1027681509_WA,Phosphorus,Outflow,Retention Pond,35,31-60,Emerald Meadows,Bothell,US,WA,2009,2012,2011
+7,-748081246_WA,TSS,Outflow,Manufactured Device,35,31-60,POS Terminal 30,Seattle,US,WA,2011,2013,2012
+3,1072980301_FL,Copper,Inflow,Detention Basin,35,31-60,The Reserve at DeBary,DeBary,US,FL,1997,1998,1997
+1,1727064429_PA,Copper,Outflow,Infiltration Basin,35,31-60,VU-Infiltration Trench,Radnor Township,US,PA,2008,2010,2009
+5,-686452339_TX,Phosphorus,Inflow,Retention Pond,35,31-60,Berdoll Farms Wet Pond,Austin,US,TX,2003,2007,2005
+7,180828237_WA,Phosphorus,Inflow,Wetland Basin,35,31-60,NW 117th St Wetland #2,Vancouver,US,WA,2010,2012,2011
+5,-1848687670_TX,TSS,Inflow,Manufactured Device,35,31-60,SC,Austin,US,TX,2007,2009,2008
+6,735665334_CA,Copper,Outflow,Grass Strip,35,31-60,San Rafael RVTS,Marinwood,US,CA,2001,2007,2003
+5,-686452339_TX,TSS,Inflow,Retention Pond,35,31-60,Berdoll Farms Wet Pond,Austin,US,TX,2003,2007,2005
+2,1084444993_NC,TSS,Outflow,Grass Strip,35,31-60,NCDOT I-40 Site D,Faison,US,NC,2008,2010,2009
+7,180828237_WA,TSS,Outflow,Wetland Basin,35,31-60,NW 117th St Wetland #2,Vancouver,US,WA,2010,2012,2011
+7,180828237_WA,TSS,Inflow,Wetland Basin,35,31-60,NW 117th St Wetland #2,Vancouver,US,WA,2010,2012,2011
+7,375502076_WA,TSS,Inflow,Wetland Basin,35,31-60,NW 117th St Wetland #1,Vancouver,US,WA,2010,2012,2011
+7,375502076_WA,TSS,Outflow,Wetland Basin,35,31-60,NW 117th St Wetland #1,Vancouver,US,WA,2010,2012,2011
+3,-2131034431_FL,Phosphorus,Inflow,Retention Pond,35,31-60,Cockroach Bay Agricultural Site,Ruskin,US,FL,1998,2001,2000
+7,1411011730_WA,Phosphorus,Inflow,Manufactured Device,35,31-60,Klineline Bridge Replacement Treatment Train,Vancouver,US,WA,2011,2012,2012
+7,-910747072_WA,TSS,Inflow,Retention Pond,35,31-60,Center Pond,Everett,US,WA,2009,2012,2011
+7,180828237_WA,Copper,Inflow,Wetland Basin,35,31-60,NW 117th St Wetland #2,Vancouver,US,WA,2010,2012,2011
+7,375502076_WA,Phosphorus,Inflow,Wetland Basin,35,31-60,NW 117th St Wetland #1,Vancouver,US,WA,2010,2012,2011
+7,-838739535_CA,Copper,Inflow,Grass Strip,35,31-60,Redding RVTS,Redding,US,CA,2001,2008,2003
+7,-754277822_WA,Copper,Outflow,Retention Pond,34,31-60,Gibson Pond,Everett,US,WA,2009,2012,2010
+7,-910747072_WA,Copper,Inflow,Retention Pond,34,31-60,Center Pond,Everett,US,WA,2009,2012,2011
+4,-1801167847_KS,TSS,Inflow,Bioretention,34,31-60,SJC - Bio Ret 6,Shawnee,US,KS,2012,2013,2013
+5,-1153896441_TX,Phosphorus,Outflow,Media Filter,34,31-60,JV,Austin,US,TX,1988,1997,1989
+6,908852039_CA,Phosphorus,Outflow,Grass Strip,34,31-60,Sacramento RVTS,Sacramento,US,CA,2001,2008,2003
+6,908852039_CA,Copper,Outflow,Grass Strip,34,31-60,Sacramento RVTS,Sacramento,US,CA,2001,2008,2003
+7,-754277822_WA,TSS,Outflow,Retention Pond,34,31-60,Gibson Pond,Everett,US,WA,2009,2012,2010
+4,-1801167847_KS,Phosphorus,Inflow,Bioretention,34,31-60,SJC - Bio Ret 6,Shawnee,US,KS,2012,2013,2013
+5,-1089864373_TX,TSS,Outflow,Retention Pond,34,31-60,Central Park Wet Pond,Austin,US,TX,1997,2001,1999
+2,1395841446_VA,Phosphorus,Inflow,Grass Swale,34,31-60,29 North Swale A,Charlottesville,US,VA,1992,1992,1992
+4,350398054_KS,TSS,Outflow,Manufactured Device,34,31-60,SMNW HANCOR,Shawnee,US,KS,2011,2013,2013
+2,847106458_VA,TSS,Inflow,Grass Swale,34,31-60,29 South Swale,Charlottesville,US,VA,1993,1994,1994
+2,-1380686069_VA,TSS,Outflow,Wetland Basin,34,31-60,Franklin Farm Pond - Created Wetland,Chantilly,US,VA,1988,1989,1988.5
+6,908852039_CA,TSS,Outflow,Grass Strip,34,31-60,Sacramento RVTS,Sacramento,US,CA,2001,2008,2003
+1,1727064429_PA,Phosphorus,Inflow,Infiltration Basin,34,31-60,VU-Infiltration Trench,Radnor Township,US,PA,2008,2010,2009
+4,648144544_KS,TSS,Outflow,Bioretention,34,31-60,Highland View,Overland Park,US,KS,2008,2011,2009
+3,-2131034431_FL,TSS,Inflow,Retention Pond,34,31-60,Cockroach Bay Agricultural Site,Ruskin,US,FL,1998,2001,2000
+2,847106458_VA,Phosphorus,Inflow,Grass Swale,34,31-60,29 South Swale,Charlottesville,US,VA,1993,1994,1994
+1,-487452381_ZZ,TSS,Outflow,Retention Pond,33,31-60,Heritage Estates Stormwater Manag. Pond,Richmond Hill,CA,ZZ,1992,1995,1993
+7,-910747072_WA,Phosphorus,Inflow,Retention Pond,33,31-60,Center Pond,Everett,US,WA,2009,2012,2011
+3,1582980719_FL,Copper,Inflow,Retention Pond,33,31-60,DeBary Detention with Filtration Pond,DeBary,US,FL,1992,1992,1992
+2,-1380686069_VA,Phosphorus,Outflow,Wetland Basin,33,31-60,Franklin Farm Pond - Created Wetland,Chantilly,US,VA,1988,1989,1989
+7,-371286772_WA,Copper,Inflow,Detention Basin,33,31-60,Boeing Computer Services,Seattle,US,WA,1984,1985,1985
+4,350398054_KS,Phosphorus,Outflow,Manufactured Device,33,31-60,SMNW HANCOR,Shawnee,US,KS,2011,2013,2013
+3,1582980719_FL,TSS,Inflow,Retention Pond,33,31-60,DeBary Detention with Filtration Pond,DeBary,US,FL,1992,1992,1992
+6,735665334_CA,Phosphorus,Outflow,Grass Strip,33,31-60,San Rafael RVTS,Marinwood,US,CA,2001,2007,2003
+3,1582980719_FL,Phosphorus,Inflow,Retention Pond,33,31-60,DeBary Detention with Filtration Pond,DeBary,US,FL,1992,1992,1992
+2,847106458_VA,Phosphorus,Outflow,Grass Swale,33,31-60,29 South Swale,Charlottesville,US,VA,1993,1994,1994
+2,847106458_VA,TSS,Outflow,Grass Swale,33,31-60,29 South Swale,Charlottesville,US,VA,1993,1994,1994
+4,721723703_KS,TSS,Inflow,Bioretention,33,31-60,OP Recycling Center,Overland Park,US,KS,2010,2013,2012
+2,600510624_NC,Phosphorus,Inflow,Manufactured Device,32,31-60,Fayetteville Filterra,Fayetteville,US,NC,2013,2014,2013
+4,-2117490718_TX,Phosphorus,Inflow,Detention Basin,32,31-60,El Dorado Detention Basin B504-03-00,Houston,US,TX,2005,2013,2008
+7,-1151112381_WA,Copper,Inflow,Media Filter,32,31-60,Boulder Creek,Sammamish,US,WA,2009,2011,2010
+7,869929866_WA,Copper,Outflow,Detention Basin,32,31-60,Boulder Creek,Sammamish,US,WA,2009,2011,2010
+4,648144544_KS,TSS,Inflow,Bioretention,32,31-60,Highland View,Overland Park,US,KS,2008,2011,2009
+6,2071161565_CA,TSS,Inflow,Manufactured Device,32,31-60,Marie Canyon,Malibu,US,CA,2008,2009,2009
+2,600510624_NC,Phosphorus,Outflow,Manufactured Device,32,31-60,Fayetteville Filterra,Fayetteville,US,NC,2013,2014,2013
+3,-1800346028_FL,Phosphorus,Inflow,Wetland Basin,32,31-60,Broadway Outfall,Temple Terrace,US,FL,2002,2003,2003
+7,-1151112381_WA,TSS,Inflow,Media Filter,32,31-60,Boulder Creek,Sammamish,US,WA,2009,2011,2010
+4,-2117490718_TX,Copper,Inflow,Detention Basin,32,31-60,El Dorado Detention Basin B504-03-00,Houston,US,TX,2005,2013,2008
+4,350398054_KS,TSS,Inflow,Manufactured Device,32,31-60,SMNW HANCOR,Shawnee,US,KS,2011,2013,2013
+7,-1151112381_WA,Phosphorus,Inflow,Media Filter,32,31-60,Boulder Creek,Sammamish,US,WA,2009,2011,2010
+3,-749550946_FL,Phosphorus,Outflow,Manufactured Device,32,31-60,Broadway Outfall,Temple Terrace,US,FL,2002,2003,2003
+6,2071161565_CA,TSS,Outflow,Manufactured Device,32,31-60,Marie Canyon,Malibu,US,CA,2008,2009,2009
+4,721723703_KS,TSS,Outflow,Bioretention,32,31-60,OP Recycling Center,Overland Park,US,KS,2010,2013,2012
+7,869929866_WA,TSS,Outflow,Detention Basin,32,31-60,Boulder Creek,Sammamish,US,WA,2009,2011,2010
+1,1453962954_MI,Phosphorus,Outflow,Retention Pond,32,31-60,"NURP, Lansing MI, Waverly Ret Basin",Lansing,US,MI,1980,1981,1981
+2,1312855463_NC,Phosphorus,Outflow,Grass Swale,32,31-60,Mango Creek,Knightdale,US,NC,2009,2010,2010
+4,-2117490718_TX,TSS,Inflow,Detention Basin,32,31-60,El Dorado Detention Basin B504-03-00,Houston,US,TX,2005,2013,2008
+2,1312855463_NC,Phosphorus,Inflow,Grass Swale,32,31-60,Mango Creek,Knightdale,US,NC,2009,2010,2010
+7,869929866_WA,Phosphorus,Outflow,Detention Basin,32,31-60,Boulder Creek,Sammamish,US,WA,2009,2011,2010
+1,530401475_CT,Phosphorus,Outflow,Manufactured Device,31,31-60,Timothy Edwards Middle School,South Windsor,US,CT,1999,2001,2000
+1,-1895414596_WI,Phosphorus,Inflow,Manufactured Device,31,31-60,Madison Gas Electric Company,Madison,US,WI,2005,2007,2006
+3,1664445868_FL,Phosphorus,Outflow,Manufactured Device,31,31-60,Lake O Sediment Demo,Okeechobee,US,FL,2002,2003,2003
+4,648144544_KS,Phosphorus,Outflow,Bioretention,31,31-60,Highland View,Overland Park,US,KS,2008,2011,2009
+1,1727064429_PA,Phosphorus,Outflow,Infiltration Basin,31,31-60,VU-Infiltration Trench,Radnor Township,US,PA,2008,2010,2009
+2,1312855463_NC,TSS,Outflow,Grass Swale,31,31-60,Mango Creek,Knightdale,US,NC,2009,2010,2010
+1,-1895414596_WI,Copper,Inflow,Manufactured Device,31,31-60,Madison Gas Electric Company,Madison,US,WI,2005,2007,2006
+3,1782781956_FL,TSS,Outflow,Grass Swale,31,31-60,Florida Aquarium Parking Lot,Tampa,US,FL,1998,2000,1999
+7,-371286772_WA,Phosphorus,Inflow,Detention Basin,31,31-60,Boeing Computer Services,Seattle,US,WA,1984,1985,1985
+3,967950500_FL,TSS,Outflow,Media Filter,31,31-60,Florida Aquarium Test Site,Tampa,US,FL,2000,2003,2002
+1,-1895414596_WI,Phosphorus,Outflow,Manufactured Device,31,31-60,Madison Gas Electric Company,Madison,US,WI,2005,2007,2006
+1,-254220822_WI,Phosphorus,Outflow,Manufactured Device,31,31-60,WI_SFD,Madison,US,WI,2005,2007,2006
+1,-254220822_WI,Copper,Inflow,Manufactured Device,31,31-60,WI_SFD,Madison,US,WI,2005,2007,2006
+3,967950500_FL,Phosphorus,Outflow,Media Filter,31,31-60,Florida Aquarium Test Site,Tampa,US,FL,2000,2003,2002
+2,1312855463_NC,TSS,Inflow,Grass Swale,31,31-60,Mango Creek,Knightdale,US,NC,2009,2010,2010
+7,-838739535_CA,Copper,Outflow,Grass Strip,31,31-60,Redding RVTS,Redding,US,CA,2001,2008,2003
+1,-1895414596_WI,Copper,Outflow,Manufactured Device,31,31-60,Madison Gas Electric Company,Madison,US,WI,2005,2007,2006
+7,-838739535_CA,Phosphorus,Outflow,Grass Strip,31,31-60,Redding RVTS,Redding,US,CA,2001,2008,2003
+5,714830611_TX,TSS,Outflow,Grass Swale,31,31-60,BL,Austin,US,TX,2000,2005,2004
+1,-254220822_WI,Copper,Outflow,Manufactured Device,31,31-60,WI_SFD,Madison,US,WI,2005,2007,2006
+1,530401475_CT,TSS,Outflow,Manufactured Device,31,31-60,Timothy Edwards Middle School,South Windsor,US,CT,1999,2001,2000
+1,-254220822_WI,Phosphorus,Inflow,Manufactured Device,31,31-60,WI_SFD,Madison,US,WI,2005,2007,2006
+7,-838739535_CA,TSS,Outflow,Grass Strip,31,31-60,Redding RVTS,Redding,US,CA,2001,2008,2003
+3,1664445868_FL,TSS,Outflow,Manufactured Device,31,31-60,Lake O Sediment Demo,Okeechobee,US,FL,2002,2003,2003
+7,202200201_WA,TSS,Outflow,Bioretention,31,31-60,Gonzaga Bioretention,Spokane,US,WA,2018,2021,2020
+5,714830611_TX,Phosphorus,Outflow,Grass Swale,31,31-60,BL,Austin,US,TX,2000,2005,2004
+2,-1587860994_NC,TSS,Inflow,Bioretention,30,20-30,Mango Creek,Knightdale,US,NC,2009,2010,2010
+4,-2117490718_TX,TSS,Outflow,Detention Basin,30,20-30,El Dorado Detention Basin B504-03-00,Houston,US,TX,2005,2013,2008
+2,-1587860994_NC,Phosphorus,Inflow,Bioretention,30,20-30,Mango Creek,Knightdale,US,NC,2009,2010,2010
+1,-451144366_MN,TSS,Inflow,Retention Pond,30,20-30,Lake Ridge Detention Pond,Woodbury,US,MN,1987,1989,1988
+4,-2117490718_TX,Copper,Outflow,Detention Basin,30,20-30,El Dorado Detention Basin B504-03-00,Houston,US,TX,2005,2013,2008
+1,-240960970_WI,Phosphorus,Inflow,Retention Pond,30,20-30,"Madison, WI, Wet Pond Monroe St.",Madison,US,WI,1987,1988,1987
+7,-1098775618_WA,TSS,Outflow,Manufactured Device,30,20-30,BellinghamFilterra,Bellingham,US,WA,2009,2010,2009
+7,-1065386384_CA,TSS,Outflow,Grass Strip,30,20-30,Redding RVTS,Redding,US,CA,2001,2008,2003
+7,-1098775618_WA,TSS,Inflow,Manufactured Device,30,20-30,BellinghamFilterra,Bellingham,US,WA,2009,2010,2009
+3,-749550946_FL,TSS,Outflow,Manufactured Device,30,20-30,Broadway Outfall,Temple Terrace,US,FL,2002,2003,2003
+1,1727064429_PA,TSS,Inflow,Infiltration Basin,30,20-30,VU-Infiltration Trench,Radnor Township,US,PA,2008,2010,2009
+4,-2117490718_TX,Phosphorus,Outflow,Detention Basin,30,20-30,El Dorado Detention Basin B504-03-00,Houston,US,TX,2005,2013,2008
+3,-1800346028_FL,TSS,Inflow,Wetland Basin,30,20-30,Broadway Outfall,Temple Terrace,US,FL,2002,2003,2003
+9,1661183142_CO,TSS,Inflow,Wetland Channel,30,20-30,Shop Creek Wetland-Pond (1990-94),Aurora,US,CO,1990,1994,1991
+3,1604339850_FL,TSS,Outflow,Manufactured Device,30,20-30,Lake O Sediment Demo,Okeechobee,US,FL,2002,2003,2003
+2,66912597_VA,TSS,Outflow,Wetland Basin,30,20-30,Rio Hill Detention Basin,Charlottesville,US,VA,1995,1995,1995
+9,-875791527_CO,TSS,Outflow,Retention Pond,30,20-30,Shop Creek Wetland-Pond (1990-94),Aurora,US,CO,1990,1994,1991
+4,350398054_KS,Phosphorus,Inflow,Manufactured Device,30,20-30,SMNW HANCOR,Shawnee,US,KS,2011,2013,2013
+3,1604339850_FL,Phosphorus,Outflow,Manufactured Device,30,20-30,Lake O Sediment Demo,Okeechobee,US,FL,2002,2003,2003
+1,-240960970_WI,Phosphorus,Outflow,Retention Pond,30,20-30,"Madison, WI, Wet Pond Monroe St.",Madison,US,WI,1987,1988,1987
+1,627107381_MN,Phosphorus,Inflow,Retention Pond,30,20-30,McKnight Basin Detention Pond,Maplewood,US,MN,1987,1989,1988
+7,-1098775618_WA,Phosphorus,Inflow,Manufactured Device,29,20-30,BellinghamFilterra,Bellingham,US,WA,2009,2010,2009
+4,721723703_KS,Phosphorus,Inflow,Bioretention,29,20-30,OP Recycling Center,Overland Park,US,KS,2010,2013,2013
+1,627107381_MN,TSS,Outflow,Retention Pond,29,20-30,McKnight Basin Detention Pond,Maplewood,US,MN,1987,1989,1988
+2,-1587860994_NC,Phosphorus,Outflow,Bioretention,29,20-30,Mango Creek,Knightdale,US,NC,2009,2010,2010
+1,-451144366_MN,TSS,Outflow,Retention Pond,29,20-30,Lake Ridge Detention Pond,Woodbury,US,MN,1987,1989,1988
+3,-1271688643_FL,TSS,Inflow,Retention Pond,29,20-30,The Tampa Office Pond,Tampa,US,FL,1993,1994,1993
+1,-240960970_WI,TSS,Inflow,Retention Pond,29,20-30,"Madison, WI, Wet Pond Monroe St.",Madison,US,WI,1987,1988,1987
+3,1999439671_FL,Phosphorus,Outflow,Retention Pond,29,20-30,Duval County Pond 1,Jacksonville,US,FL,1981,1982,1982
+7,-1098775618_WA,Phosphorus,Outflow,Manufactured Device,29,20-30,BellinghamFilterra,Bellingham,US,WA,2009,2010,2009
+7,-1065386384_CA,Copper,Outflow,Grass Strip,29,20-30,Redding RVTS,Redding,US,CA,2001,2008,2003
+3,-1271688643_FL,Phosphorus,Inflow,Retention Pond,29,20-30,The Tampa Office Pond,Tampa,US,FL,1993,1994,1993
+3,1999439671_FL,TSS,Inflow,Retention Pond,29,20-30,Duval County Pond 1,Jacksonville,US,FL,1981,1982,1982
+1,-240960970_WI,TSS,Outflow,Retention Pond,29,20-30,"Madison, WI, Wet Pond Monroe St.",Madison,US,WI,1987,1988,1987
+2,-1587860994_NC,TSS,Outflow,Bioretention,29,20-30,Mango Creek,Knightdale,US,NC,2009,2010,2010
+3,1999439671_FL,TSS,Outflow,Retention Pond,29,20-30,Duval County Pond 1,Jacksonville,US,FL,1981,1982,1982
+5,-1848687670_TX,Phosphorus,Outflow,Manufactured Device,29,20-30,SC,Austin,US,TX,2007,2009,2008
+4,648144544_KS,Phosphorus,Inflow,Bioretention,29,20-30,Highland View,Overland Park,US,KS,2008,2011,2009
+1,1312629745_MN,Phosphorus,Outflow,Wetland Channel,29,20-30,Villa Park MN,Roseville,US,MN,2007,2008,2007
+1,202000104_WI,TSS,Outflow,Porous Pavement,29,20-30,MadisonPavementSite,Madison,US,WI,2016,2018,2017
+3,1999439671_FL,Phosphorus,Inflow,Retention Pond,29,20-30,Duval County Pond 1,Jacksonville,US,FL,1981,1982,1982
+5,-1848687670_TX,TSS,Outflow,Manufactured Device,29,20-30,SC,Austin,US,TX,2007,2009,2008
+4,721723703_KS,Phosphorus,Outflow,Bioretention,28,20-30,OP Recycling Center,Overland Park,US,KS,2010,2013,2013
+2,1017767997_MO,TSS,Inflow,Bioretention,28,20-30,1222 East 76th Street,Kansas City ,US,MO,2012,2013,2013
+1,1312629745_MN,TSS,Outflow,Wetland Channel,28,20-30,Villa Park MN,Roseville,US,MN,2007,2008,2007
+7,167145060_WA,Phosphorus,Inflow,Bioretention,28,20-30,WA Ecology Embankment at SR 167 MP 16.4,Auburn,US,WA,2001,2005,2004
+2,600510624_NC,TSS,Inflow,Manufactured Device,28,20-30,Fayetteville Filterra,Fayetteville,US,NC,2013,2014,2013
+2,201901002_NC,TSS,Outflow,Grass Swale,28,20-30,Pittsboro,Pittsboro,US,NC,2007,2009,2008
+7,-39516690_CA,Phosphorus,Outflow,Media Filter,28,20-30,Mountain Gate Sand Filter,Redding,US,CA,2002,2006,2005
+7,167145060_WA,TSS,Inflow,Bioretention,28,20-30,WA Ecology Embankment at SR 167 MP 16.4,Auburn,US,WA,2001,2005,2004
+1,681502880_MN,TSS,Outflow,Wetland Channel,28,20-30,Lake McCarrons Wetland Treatment System,Roseville,US,MN,1986,1988,1987
+7,-39516690_CA,TSS,Outflow,Media Filter,28,20-30,Mountain Gate Sand Filter,Redding,US,CA,2002,2006,2005
+2,600510624_NC,TSS,Outflow,Manufactured Device,28,20-30,Fayetteville Filterra,Fayetteville,US,NC,2013,2014,2013
+2,201901002_NC,Phosphorus,Outflow,Grass Swale,28,20-30,Pittsboro,Pittsboro,US,NC,2007,2009,2008
+1,681502880_MN,Phosphorus,Outflow,Wetland Channel,28,20-30,Lake McCarrons Wetland Treatment System,Roseville,US,MN,1986,1988,1987
+7,-1065386384_CA,Phosphorus,Outflow,Grass Strip,27,20-30,Redding RVTS,Redding,US,CA,2001,2008,2003
+2,1821743850_NC,TSS,Inflow,Bioretention,27,20-30,Hal Marshall Bioretention Cell,Charlotte,US,NC,2004,2006,2005
+7,2041238352_WA,TSS,Inflow,Bioretention,27,20-30,R Street,Tacoma,US,WA,2010,2013,2012
+9,1661183142_CO,Copper,Inflow,Wetland Channel,27,20-30,Shop Creek Wetland-Pond (1990-94),Aurora,US,CO,1990,1992,1991
+7,-39516690_CA,Copper,Outflow,Media Filter,27,20-30,Mountain Gate Sand Filter,Redding,US,CA,2002,2006,2005
+7,202200201_WA,Copper,Outflow,Bioretention,27,20-30,Gonzaga Bioretention,Spokane,US,WA,2018,2021,2020
+1,-451144366_MN,Phosphorus,Inflow,Retention Pond,27,20-30,Lake Ridge Detention Pond,Woodbury,US,MN,1987,1989,1988
+2,1821743850_NC,Phosphorus,Inflow,Bioretention,27,20-30,Hal Marshall Bioretention Cell,Charlotte,US,NC,2004,2006,2005
+2,-1459348104_MO,TSS,Inflow,Bioretention,27,20-30,1419 East 76th Street,Kansas City ,US,MO,2012,2013,2012
+7,202200201_WA,Phosphorus,Outflow,Bioretention,27,20-30,Gonzaga Bioretention,Spokane,US,WA,2018,2021,2020
+3,204825328_FL,Phosphorus,Outflow,Grass Swale,27,20-30,Florida Aquarium Parking Lot,Tampa,US,FL,1998,2000,1999
+5,-686452339_TX,Phosphorus,Outflow,Retention Pond,27,20-30,Berdoll Farms Wet Pond,Austin,US,TX,2003,2007,2005
+7,913484011_WA,TSS,Inflow,Bioretention,27,20-30,44th Street,Tacoma,US,WA,2010,2013,2012
+5,-686452339_TX,TSS,Outflow,Retention Pond,27,20-30,Berdoll Farms Wet Pond,Austin,US,TX,2003,2007,2005
+1,202000104_WI,Phosphorus,Outflow,Porous Pavement,27,20-30,MadisonPavementSite,Madison,US,WI,2016,2018,2017
+9,-875791527_CO,Copper,Outflow,Retention Pond,27,20-30,Shop Creek Wetland-Pond (1990-94),Aurora,US,CO,1990,1992,1991
+7,913484011_WA,Copper,Inflow,Bioretention,27,20-30,44th Street,Tacoma,US,WA,2010,2013,2012
+7,2041238352_WA,Copper,Inflow,Bioretention,26,20-30,R Street,Tacoma,US,WA,2010,2013,2012
+9,1789503720_CO,TSS,Inflow,Bioretention,26,20-30,21st and Iris Rain Garden,Lakewood,US,CO,2019,2021,2020
+2,201901102_NC,TSS,Inflow,Grass Swale,26,20-30,Ironton,Ironton,US,NC,2007,2009,2008
+6,-1956394040_CA,TSS,Inflow,Media Filter,26,20-30,La Costa P&R,Carlsbad,US,CA,1999,2001,2001
+1,579679611_MN,Phosphorus,Outflow,Retention Pond,26,20-30,Lake McCarrons Wetland Treatment System,Roseville,US,MN,1986,1988,1987
+4,499364728_KS,TSS,Inflow,Bioretention,26,20-30,SJC - Bio Ret 3B,Shawnee,US,KS,2012,2013,2013
+2,201901002_NC,Phosphorus,Inflow,Grass Swale,26,20-30,Pittsboro,Pittsboro,US,NC,2007,2009,2008
+5,-1089864373_TX,TSS,Inflow,Retention Pond,26,20-30,Central Park Wet Pond,Austin,US,TX,1997,2001,1999
+2,201901102_NC,Phosphorus,Inflow,Grass Swale,26,20-30,Ironton,Ironton,US,NC,2007,2009,2008
+1,1110495534_WI,Copper,Outflow,Manufactured Device,26,20-30,"Madison, WI, Stormceptor",Madison,US,WI,1996,1997,1996
+4,499364728_KS,Phosphorus,Inflow,Bioretention,26,20-30,SJC - Bio Ret 3B,Shawnee,US,KS,2012,2013,2013
+7,913484011_WA,Copper,Outflow,Bioretention,26,20-30,44th Street,Tacoma,US,WA,2010,2013,2012
+1,579679611_MN,TSS,Outflow,Retention Pond,26,20-30,Lake McCarrons Wetland Treatment System,Roseville,US,MN,1986,1988,1987
+7,913484011_WA,TSS,Outflow,Bioretention,26,20-30,44th Street,Tacoma,US,WA,2010,2013,2012
+2,201901002_NC,TSS,Inflow,Grass Swale,26,20-30,Pittsboro,Pittsboro,US,NC,2007,2009,2008
+6,1170450900_CA,Phosphorus,Inflow,Grass Strip,25,20-30,Yorba Linda RVTS,Yorba Linda,US,CA,2001,2008,2003
+3,-1217647869_FL,Phosphorus,Outflow,Wetland Channel,25,20-30,Megginnis Creek,Tallahassee,US,FL,1985,1987,1985
+7,-99469631_CA,Phosphorus,Inflow,Media Filter,25,20-30,Mount Shasta Maintenance Station,Shasta,US,CA,2002,2006,2005
+6,503369727_CA,Phosphorus,Inflow,Grass Strip,25,20-30,Yorba Linda RVTS,Yorba Linda,US,CA,2001,2008,2003
+6,1593397829_CA,TSS,Inflow,Grass Strip,25,20-30,Yorba Linda RVTS,Yorba Linda,US,CA,2001,2008,2003
+2,-151133217_VA,TSS,Outflow,Detention Basin,25,20-30,Massie Road Detention Pond C,Charlottesville,US,VA,1993,1993,1993
+6,503369727_CA,TSS,Inflow,Grass Strip,25,20-30,Yorba Linda RVTS,Yorba Linda,US,CA,2001,2008,2003
+6,-1443007454_CA,Phosphorus,Inflow,Grass Strip,25,20-30,Yorba Linda RVTS,Yorba Linda,US,CA,2001,2008,2006
+5,795376444_TX,TSS,Inflow,Detention Basin,25,20-30,MR,Austin,US,TX,1984,1986,1985
+6,1593397829_CA,Copper,Inflow,Grass Strip,25,20-30,Yorba Linda RVTS,Yorba Linda,US,CA,2001,2008,2003
+2,-151133217_VA,Phosphorus,Outflow,Detention Basin,25,20-30,Massie Road Detention Pond C,Charlottesville,US,VA,1993,1993,1993
+5,-1409388884_TX,TSS,Inflow,Retention Pond,25,20-30,WH,Austin,US,TX,1985,1995,1986
+6,-1443007454_CA,Copper,Inflow,Grass Strip,25,20-30,Yorba Linda RVTS,Yorba Linda,US,CA,2001,2008,2006
+3,-1271688643_FL,TSS,Outflow,Retention Pond,25,20-30,The Tampa Office Pond,Tampa,US,FL,1993,1994,1993
+6,1170450900_CA,TSS,Inflow,Grass Strip,25,20-30,Yorba Linda RVTS,Yorba Linda,US,CA,2001,2008,2003
+7,201901302_WA,Phosphorus,Inflow,Grass Strip,25,20-30,Everett,Everett,US,WA,2014,2018,2016
+7,167145060_WA,Phosphorus,Outflow,Bioretention,25,20-30,WA Ecology Embankment at SR 167 MP 16.4,Auburn,US,WA,2001,2005,2004
+1,-451144366_MN,Phosphorus,Outflow,Retention Pond,25,20-30,Lake Ridge Detention Pond,Woodbury,US,MN,1987,1989,1988
+7,-99469631_CA,TSS,Inflow,Media Filter,25,20-30,Mount Shasta Maintenance Station,Shasta,US,CA,2002,2006,2005
+7,167145060_WA,TSS,Outflow,Bioretention,25,20-30,WA Ecology Embankment at SR 167 MP 16.4,Auburn,US,WA,2001,2005,2004
+3,-751735465_FL,Phosphorus,Inflow,Retention Pond,25,20-30,Derby Ditch,Auburndale,US,FL,1996,1998,1997
+2,-257742440_MD,Copper,Outflow,Bioretention,25,20-30,Towson Glen,Towson,US,MD,2013,2014,2013
+3,347856767_FL,TSS,Inflow,Manufactured Device,25,20-30,Univ of Florida - Gainesville JF,Gainesville,US,FL,2010,2011,2010
+2,-151133217_VA,Phosphorus,Inflow,Detention Basin,25,20-30,Massie Road Detention Pond C,Charlottesville,US,VA,1993,1993,1993
+5,-2045875046_TX,Phosphorus,Inflow,Media Filter,25,20-30,Barton Creek Square Shopping Center,Austin,US,TX,1985,1987,1986
+4,-1801167847_KS,TSS,Outflow,Bioretention,25,20-30,SJC - Bio Ret 6,Shawnee,US,KS,2012,2013,2013
+6,503369727_CA,Copper,Inflow,Grass Strip,25,20-30,Yorba Linda RVTS,Yorba Linda,US,CA,2001,2008,2003
+5,-1409388884_TX,Phosphorus,Inflow,Retention Pond,25,20-30,WH,Austin,US,TX,1985,1995,1986
+3,-751735465_FL,TSS,Inflow,Retention Pond,25,20-30,Derby Ditch,Auburndale,US,FL,1997,1998,1997
+5,795376444_TX,Phosphorus,Inflow,Detention Basin,25,20-30,MR,Austin,US,TX,1984,1986,1985
+1,202000102_WI,TSS,Outflow,Porous Pavement,25,20-30,MadisonPavementSite,Madison,US,WI,2014,2016,2015
+9,1789503720_CO,Phosphorus,Inflow,Bioretention,25,20-30,21st and Iris Rain Garden,Lakewood,US,CO,2019,2021,2020
+2,-257742440_MD,Copper,Inflow,Bioretention,25,20-30,Towson Glen,Towson,US,MD,2013,2014,2013
+5,-1089864373_TX,Phosphorus,Outflow,Retention Pond,25,20-30,Central Park Wet Pond,Austin,US,TX,1999,2001,2000
+4,-1801167847_KS,Phosphorus,Outflow,Bioretention,25,20-30,SJC - Bio Ret 6,Shawnee,US,KS,2012,2013,2013
+3,347856767_FL,TSS,Outflow,Manufactured Device,25,20-30,Univ of Florida - Gainesville JF,Gainesville,US,FL,2010,2011,2010
+3,347856767_FL,Phosphorus,Inflow,Manufactured Device,25,20-30,Univ of Florida - Gainesville JF,Gainesville,US,FL,2010,2011,2010
+6,1170450900_CA,Copper,Inflow,Grass Strip,25,20-30,Yorba Linda RVTS,Yorba Linda,US,CA,2001,2008,2003
+6,-1443007454_CA,TSS,Inflow,Grass Strip,25,20-30,Yorba Linda RVTS,Yorba Linda,US,CA,2001,2008,2006
+3,-1271688643_FL,Phosphorus,Outflow,Retention Pond,25,20-30,The Tampa Office Pond,Tampa,US,FL,1993,1994,1993
+3,347856767_FL,Phosphorus,Outflow,Manufactured Device,25,20-30,Univ of Florida - Gainesville JF,Gainesville,US,FL,2010,2011,2010
+5,-2045875046_TX,TSS,Inflow,Media Filter,25,20-30,Barton Creek Square Shopping Center,Austin,US,TX,1985,1987,1986
+7,913484011_WA,Phosphorus,Outflow,Bioretention,25,20-30,44th Street,Tacoma,US,WA,2010,2013,2012
+2,-151133217_VA,TSS,Inflow,Detention Basin,25,20-30,Massie Road Detention Pond C,Charlottesville,US,VA,1993,1993,1993
+7,-99469631_CA,Copper,Outflow,Media Filter,25,20-30,Mount Shasta Maintenance Station,Shasta,US,CA,2002,2006,2005
+7,-99469631_CA,TSS,Outflow,Media Filter,25,20-30,Mount Shasta Maintenance Station,Shasta,US,CA,2002,2006,2005
+7,-99469631_CA,Copper,Inflow,Media Filter,25,20-30,Mount Shasta Maintenance Station,Shasta,US,CA,2002,2006,2005
+6,1593397829_CA,Phosphorus,Inflow,Grass Strip,25,20-30,Yorba Linda RVTS,Yorba Linda,US,CA,2001,2008,2003
+4,-727994930_KS,TSS,Inflow,Bioretention,25,20-30,87th Metcalf BMP,Overland Park,US,KS,2008,2010,2009
+7,913484011_WA,Phosphorus,Inflow,Bioretention,25,20-30,44th Street,Tacoma,US,WA,2010,2013,2012
+7,-99469631_CA,Phosphorus,Outflow,Media Filter,25,20-30,Mount Shasta Maintenance Station,Shasta,US,CA,2002,2006,2005
+2,1376575417_MD,Copper,Outflow,Bioretention,24,20-30,Towson Glen,Towson,US,MD,2013,2014,2013
+4,1758913519_KS,TSS,Outflow,Detention Basin,24,20-30,SMNW EXT DRY DET,Shawnee,US,KS,2011,2013,2013
+1,146131124_WI,TSS,Inflow,Manufactured Device,24,20-30,USGS_WI_SFD,Milwaukee,US,WI,2002,2003,2003
+6,-748110633_CA,Copper,Inflow,Retention Pond,24,20-30,Heron Bay Wet Pond,San Leandro,US,CA,2002,2004,2003
+3,1583890824_FL,Phosphorus,Inflow,Media Filter,24,20-30,Megginnis Creek,Tallahassee,US,FL,1983,1987,1985
+2,-289103686_MO,TSS,Inflow,Bioretention,24,20-30,1324 East 76th Street,Kansas City ,US,MO,2012,2013,2013
+1,627107381_MN,Phosphorus,Outflow,Retention Pond,24,20-30,McKnight Basin Detention Pond,Maplewood,US,MN,1987,1989,1988
+6,-748110633_CA,TSS,Outflow,Retention Pond,24,20-30,Heron Bay Wet Pond,San Leandro,US,CA,2002,2004,2003
+6,-1203964548_CA,Phosphorus,Outflow,Grass Strip,24,20-30,Sacramento RVTS,Sacramento,US,CA,2001,2008,2003
+9,1789503720_CO,Copper,Inflow,Bioretention,24,20-30,21st and Iris Rain Garden,Lakewood,US,CO,2019,2021,2020
+1,146131124_WI,TSS,Outflow,Manufactured Device,24,20-30,USGS_WI_SFD,Milwaukee,US,WI,2002,2003,2003
+1,-240960970_WI,Copper,Outflow,Retention Pond,24,20-30,"Madison, WI, Wet Pond Monroe St.",Madison,US,WI,1987,1988,1987
+2,-322676774_MD,Copper,Inflow,Grass Strip,24,20-30,Towson Glen,Towson,US,MD,2013,2014,2014
+6,-748110633_CA,Copper,Outflow,Retention Pond,24,20-30,Heron Bay Wet Pond,San Leandro,US,CA,2002,2004,2003
+2,1915504165_VA,Phosphorus,Inflow,Grass Swale,24,20-30,29 North Swale B,Charlottesville,US,VA,1992,1993,1993
+6,-1203964548_CA,TSS,Outflow,Grass Strip,24,20-30,Sacramento RVTS,Sacramento,US,CA,2001,2008,2003
+3,-1378579706_FL,Phosphorus,Outflow,Retention Pond,24,20-30,Largo Regional STF,Largo,US,FL,2002,2003,2002
+3,-1378579706_FL,TSS,Outflow,Retention Pond,24,20-30,Largo Regional STF,Largo,US,FL,2002,2003,2002
+5,-2003038404_TX,TSS,Inflow,Grass Strip,24,20-30,Walnut Creek,Austin,US,TX,1994,1997,1996
+6,-1203964548_CA,Copper,Outflow,Grass Strip,24,20-30,Sacramento RVTS,Sacramento,US,CA,2001,2008,2003
+2,551617809_NC,Phosphorus,Outflow,Bioretention,24,20-30,Mango Creek,Knightdale,US,NC,2009,2010,2010
+1,-240960970_WI,Copper,Inflow,Retention Pond,24,20-30,"Madison, WI, Wet Pond Monroe St.",Madison,US,WI,1987,1988,1987
+2,-1384686413_MO,TSS,Inflow,Bioretention,24,20-30,1325 East 76th Street,Kansas City ,US,MO,2012,2013,2012.5
+2,972115283_MD,Copper,Inflow,Grass Strip,24,20-30,Towson Glen,Towson,US,MD,2013,2014,2013.5
+7,202300201_WA,Copper,Inflow,Manufactured Device,24,20-30,Armco Avenue Filterra,Hillsboro ,US,WA,2015,2019,2017
+7,202300201_WA,TSS,Outflow,Manufactured Device,24,20-30,Armco Avenue Filterra,Hillsboro ,US,WA,2015,2019,2017
+3,-1378579706_FL,Phosphorus,Inflow,Retention Pond,24,20-30,Largo Regional STF,Largo,US,FL,2002,2003,2002
+3,-1378579706_FL,TSS,Inflow,Retention Pond,24,20-30,Largo Regional STF,Largo,US,FL,2002,2003,2002
+2,1915504165_VA,TSS,Inflow,Grass Swale,24,20-30,29 North Swale B,Charlottesville,US,VA,1992,1993,1993
+7,201901302_WA,Copper,Inflow,Grass Strip,24,20-30,Everett,Everett,US,WA,2014,2018,2016
+2,551617809_NC,TSS,Outflow,Bioretention,24,20-30,Mango Creek,Knightdale,US,NC,2009,2010,2010
+7,202300201_WA,Copper,Outflow,Manufactured Device,24,20-30,Armco Avenue Filterra,Hillsboro ,US,WA,2015,2019,2017
+7,202300201_WA,TSS,Inflow,Manufactured Device,24,20-30,Armco Avenue Filterra,Hillsboro ,US,WA,2015,2019,2017
+2,-2075068886_NC,Phosphorus,Outflow,Permeable Friction,23,20-30,NCDOT I-40 Site A,Benson,US,NC,2008,2010,2009
+2,451219421_NC,Phosphorus,Outflow,Wetland Basin,23,20-30,Simmons,New Bern,US,NC,2013,2014,2014
+7,-1758967266_CA,TSS,Outflow,Grass Strip,23,20-30,Redding RVTS,Redding,US,CA,2001,2008,2003
+2,-1548145450_NC,TSS,Outflow,Permeable Friction,23,20-30,NCDOT I-40 Site B,Benson,US,NC,2008,2010,2009
+2,1010839656_NC,TSS,Inflow,Grass Swale,23,20-30,NCDOT I-40 Site A,Benson,US,NC,2008,2010,2009
+2,-1548145450_NC,Phosphorus,Inflow,Permeable Friction,23,20-30,NCDOT I-40 Site B,Benson,US,NC,2008,2010,2009
+3,1038061310_FL,TSS,Inflow,Retention Pond,23,20-30,Jan Phyl Village,Winter Haven,US,FL,1999,2000,1999
+7,785768151_CA,Copper,Inflow,Grass Strip,23,20-30,Cottonwood RVTS,Cottonwood,US,CA,2001,2007,2002
+1,51025503_WI,TSS,Outflow,Manufactured Device,23,20-30,USGS_WI_HSD_DD,Madison,US,WI,2005,2006,2006
+2,-2075068886_NC,Phosphorus,Inflow,Permeable Friction,23,20-30,NCDOT I-40 Site A,Benson,US,NC,2008,2010,2009
+5,-2003038404_TX,Phosphorus,Inflow,Grass Strip,23,20-30,Walnut Creek,Austin,US,TX,1994,1997,1996
+2,-1548145450_NC,Phosphorus,Outflow,Permeable Friction,23,20-30,NCDOT I-40 Site B,Benson,US,NC,2008,2010,2009
+2,201901102_NC,TSS,Outflow,Grass Swale,23,20-30,Ironton,Ironton,US,NC,2007,2009,2008
+2,-1548145450_NC,TSS,Inflow,Permeable Friction,23,20-30,NCDOT I-40 Site B,Benson,US,NC,2008,2010,2009
+2,201901102_NC,Phosphorus,Outflow,Grass Swale,23,20-30,Ironton,Ironton,US,NC,2007,2009,2008
+1,1727064429_PA,TSS,Outflow,Infiltration Basin,23,20-30,VU-Infiltration Trench,Radnor Township,US,PA,2008,2010,2009
+4,-727994930_KS,TSS,Outflow,Bioretention,23,20-30,87th Metcalf BMP,Overland Park,US,KS,2008,2010,2009
+2,937754979_NC,TSS,Inflow,Grass Strip,23,20-30,NCDOT I-40 Site A,Benson,US,NC,2008,2010,2009
+3,1038061310_FL,Phosphorus,Inflow,Retention Pond,23,20-30,Jan Phyl Village,Winter Haven,US,FL,1999,2000,1999
+7,785768151_CA,Phosphorus,Outflow,Grass Strip,23,20-30,Cottonwood RVTS,Cottonwood,US,CA,2001,2007,2002
+7,-1758967266_CA,Copper,Outflow,Grass Strip,23,20-30,Redding RVTS,Redding,US,CA,2001,2008,2003
+7,785768151_CA,Phosphorus,Inflow,Grass Strip,23,20-30,Cottonwood RVTS,Cottonwood,US,CA,2001,2007,2002
+1,51025503_WI,TSS,Inflow,Manufactured Device,23,20-30,USGS_WI_HSD_DD,Madison,US,WI,2005,2006,2006
+4,-727994930_KS,Phosphorus,Inflow,Bioretention,23,20-30,87th Metcalf BMP,Overland Park,US,KS,2008,2010,2009
+7,785768151_CA,TSS,Outflow,Grass Strip,23,20-30,Cottonwood RVTS,Cottonwood,US,CA,2001,2007,2002
+2,-1386928737_NC,Phosphorus,Inflow,Wetland Channel,23,20-30,NCDOT I-40 Site B,Benson,US,NC,2008,2010,2009
+2,1821743850_NC,TSS,Outflow,Bioretention,23,20-30,Hal Marshall Bioretention Cell,Charlotte,US,NC,2004,2006,2005
+2,201901202_NC,TSS,Inflow,Grass Swale,23,20-30,Chapel Hill,Chapel Hill,US,NC,2007,2009,2008
+2,451219421_NC,TSS,Inflow,Wetland Basin,23,20-30,Simmons,New Bern,US,NC,2013,2014,2014
+2,-1953869629_VA,Phosphorus,Inflow,Bioretention,23,20-30,Blacksburg Aquatic Center,Blacksburg,US,VA,2007,2008,2008
+7,201901301_WA,TSS,Outflow,Grass Strip,23,20-30,Everett,Everett,US,WA,2013,2018,2016
+7,2041238352_WA,Phosphorus,Inflow,Bioretention,23,20-30,R Street,Tacoma,US,WA,2010,2013,2012
+2,451219421_NC,TSS,Outflow,Wetland Basin,23,20-30,Simmons,New Bern,US,NC,2013,2014,2014
+7,785768151_CA,TSS,Inflow,Grass Strip,23,20-30,Cottonwood RVTS,Cottonwood,US,CA,2001,2007,2002
+2,-2075068886_NC,TSS,Outflow,Permeable Friction,23,20-30,NCDOT I-40 Site A,Benson,US,NC,2008,2010,2009
+2,-2075068886_NC,TSS,Inflow,Permeable Friction,23,20-30,NCDOT I-40 Site A,Benson,US,NC,2008,2010,2009
+2,201901202_NC,Phosphorus,Inflow,Grass Swale,23,20-30,Chapel Hill,Chapel Hill,US,NC,2007,2009,2008
+2,1010839656_NC,Phosphorus,Inflow,Grass Swale,23,20-30,NCDOT I-40 Site A,Benson,US,NC,2008,2010,2009
+2,-1386928737_NC,TSS,Inflow,Wetland Channel,23,20-30,NCDOT I-40 Site B,Benson,US,NC,2008,2010,2009
+7,201901301_WA,Phosphorus,Outflow,Grass Strip,23,20-30,Everett,Everett,US,WA,2014,2018,2016
+2,451219421_NC,Phosphorus,Inflow,Wetland Basin,23,20-30,Simmons,New Bern,US,NC,2013,2014,2014
+7,785768151_CA,Copper,Outflow,Grass Strip,23,20-30,Cottonwood RVTS,Cottonwood,US,CA,2001,2007,2002
+2,937754979_NC,Phosphorus,Inflow,Grass Strip,23,20-30,NCDOT I-40 Site A,Benson,US,NC,2008,2010,2009
+1,-1245604459_ZZ,TSS,Outflow,Bioretention,22,20-30,IX-4,Mississauga,CA,ZZ,2014,2015,2014
+6,472667464_CA,TSS,Inflow,Grass Strip,22,20-30,San Onofre RVTS,San Onofre,US,CA,2001,2008,2003
+6,-1440045629_CA,Phosphorus,Outflow,Grass Strip,22,20-30,San Onofre RVTS,San Onofre,US,CA,2001,2008,2003
+4,499364728_KS,TSS,Outflow,Bioretention,22,20-30,SJC - Bio Ret 3B,Shawnee,US,KS,2012,2013,2013
+4,1758913519_KS,Phosphorus,Outflow,Detention Basin,22,20-30,SMNW EXT DRY DET,Shawnee,US,KS,2011,2013,2013
+6,-1301697111_CA,TSS,Inflow,Grass Strip,22,20-30,San Onofre RVTS,San Onofre,US,CA,2001,2008,2003
+3,1583890824_FL,Phosphorus,Outflow,Media Filter,22,20-30,Megginnis Creek,Tallahassee,US,FL,1983,1987,1985
+3,-1466164052_FL,Phosphorus,Inflow,Retention Pond,22,20-30,The Tampa Office Pond,Tampa,US,FL,1990,1991,1990
+6,472667464_CA,Copper,Inflow,Grass Strip,22,20-30,San Onofre RVTS,San Onofre,US,CA,2001,2008,2003
+4,499364728_KS,Phosphorus,Outflow,Bioretention,22,20-30,SJC - Bio Ret 3B,Shawnee,US,KS,2012,2013,2013
+2,-257742440_MD,TSS,Outflow,Bioretention,22,20-30,Towson Glen,Towson,US,MD,2013,2014,2014
+6,-1440045629_CA,TSS,Outflow,Grass Strip,22,20-30,San Onofre RVTS,San Onofre,US,CA,2001,2008,2003
+3,-1217647869_FL,Phosphorus,Inflow,Wetland Channel,22,20-30,Megginnis Creek,Tallahassee,US,FL,1985,1987,1985
+5,-2003038404_TX,TSS,Outflow,Grass Strip,22,20-30,Walnut Creek,Austin,US,TX,1994,1997,1996
+6,-1440045629_CA,TSS,Inflow,Grass Strip,22,20-30,San Onofre RVTS,San Onofre,US,CA,2001,2008,2003
+6,-1440045629_CA,Copper,Outflow,Grass Strip,22,20-30,San Onofre RVTS,San Onofre,US,CA,2001,2008,2003
+2,1376575417_MD,Copper,Inflow,Bioretention,22,20-30,Towson Glen,Towson,US,MD,2013,2014,2013
+3,-1466164052_FL,TSS,Outflow,Retention Pond,22,20-30,The Tampa Office Pond,Tampa,US,FL,1990,1991,1990
+2,-2026032762_NC,Phosphorus,Inflow,Bioretention,22,20-30,Rocky Mount Grassed Cell_Year 1 (deeper IWS zone),Rocky Mount,US,NC,2007,2009,2008
+6,-1440045629_CA,Copper,Inflow,Grass Strip,22,20-30,San Onofre RVTS,San Onofre,US,CA,2001,2008,2003
+6,-1301697111_CA,Phosphorus,Inflow,Grass Strip,22,20-30,San Onofre RVTS,San Onofre,US,CA,2001,2008,2003
+7,1053525776_WA,TSS,Inflow,Manufactured Device,22,20-30,Port of Tacoma Filterra 1,Tacoma,US,WA,2008,2009,2009
+6,-1440045629_CA,Phosphorus,Inflow,Grass Strip,22,20-30,San Onofre RVTS,San Onofre,US,CA,2001,2008,2003
+3,-1466164052_FL,Phosphorus,Outflow,Retention Pond,22,20-30,The Tampa Office Pond,Tampa,US,FL,1990,1991,1990
+6,472667464_CA,Phosphorus,Inflow,Grass Strip,22,20-30,San Onofre RVTS,San Onofre,US,CA,2001,2008,2003
+5,270059998_TX,TSS,Inflow,Media Filter,22,20-30,HW,Austin,US,TX,1985,1987,1986
+6,-1301697111_CA,Copper,Inflow,Grass Strip,22,20-30,San Onofre RVTS,San Onofre,US,CA,2001,2008,2003
+3,-1466164052_FL,TSS,Inflow,Retention Pond,22,20-30,The Tampa Office Pond,Tampa,US,FL,1990,1991,1990
+2,1821743850_NC,Phosphorus,Outflow,Bioretention,22,20-30,Hal Marshall Bioretention Cell,Charlotte,US,NC,2004,2006,2005
+2,1615888847_NC,TSS,Inflow,Grass Strip,22,20-30,Emergency Response Center,Louisburg,US,NC,2008,2009,2008
+2,767376559_MD,TSS,Inflow,Wetland Basin,22,20-30,Prince George's Pond,Clinton,US,MD,1987,1990,1989
+1,202000102_WI,Phosphorus,Outflow,Porous Pavement,22,20-30,MadisonPavementSite,Madison,US,WI,2014,2016,2015
+2,1919436742_NC,TSS,Outflow,Grass Strip,22,20-30,Emergency Response Center,Louisburg,US,NC,2008,2009,2008
+2,1919436742_NC,TSS,Inflow,Grass Strip,22,20-30,Emergency Response Center,Louisburg,US,NC,2008,2009,2008
+5,-1641934844_TX,TSS,Outflow,Grass Strip,22,20-30,US 183 at MoPac,Austin,US,TX,1996,1997,1996
+2,767376559_MD,Phosphorus,Inflow,Wetland Basin,22,20-30,Prince George's Pond,Clinton,US,MD,1987,1990,1989
+7,1053525776_WA,TSS,Outflow,Manufactured Device,22,20-30,Port of Tacoma Filterra 1,Tacoma,US,WA,2008,2009,2009
+7,-1758967266_CA,Phosphorus,Outflow,Grass Strip,21,20-30,Redding RVTS,Redding,US,CA,2001,2008,2003
+2,1615888847_NC,Phosphorus,Inflow,Grass Strip,21,20-30,Emergency Response Center,Louisburg,US,NC,2008,2009,2008
+2,-343487644_NC,Phosphorus,Inflow,Grass Strip,21,20-30,Apex High School,Apex,US,NC,2008,2009,2008
+7,-1271533783_WA,TSS,Inflow,Media Filter,21,20-30,Boulder Creek,Sammamish,US,WA,2010,2011,2010.5
+2,1615888847_NC,TSS,Outflow,Grass Strip,21,20-30,Emergency Response Center,Louisburg,US,NC,2008,2009,2008
+1,202000109_WI,TSS,Inflow,Porous Pavement,21,20-30,MadisonPavementSite,Madison,US,WI,2020,2020,2020
+5,270059998_TX,Phosphorus,Outflow,Media Filter,21,20-30,HW,Austin,US,TX,1985,1987,1986
+2,1376575417_MD,TSS,Outflow,Bioretention,21,20-30,Towson Glen,Towson,US,MD,2013,2014,2013
+1,202000107_WI,TSS,Inflow,Porous Pavement,21,20-30,MadisonPavementSite,Madison,US,WI,2020,2020,2020
+7,201901301_WA,Copper,Outflow,Grass Strip,21,20-30,Everett,Everett,US,WA,2014,2018,2016
+2,201901202_NC,TSS,Outflow,Grass Swale,21,20-30,Chapel Hill,Chapel Hill,US,NC,2007,2009,2008
+9,-875791527_CO,Phosphorus,Outflow,Retention Pond,21,20-30,Shop Creek Wetland-Pond (1990-94),Aurora,US,CO,1990,1994,1990.5
+7,77073608_WA,TSS,Outflow,Detention Basin,21,20-30,Boulder Creek,Sammamish,US,WA,2010,2011,2011
+5,1752800999_TX,TSS,Outflow,Retention Pond,21,20-30,Sand Beach Wet Pond (SB),Austin,US,TX,2009,2010,2010
+5,1752800999_TX,Phosphorus,Outflow,Retention Pond,21,20-30,Sand Beach Wet Pond (SB),Austin,US,TX,2009,2010,2010
+5,270059998_TX,TSS,Outflow,Media Filter,21,20-30,HW,Austin,US,TX,1985,1987,1986
+2,1007496756_VA,TSS,Inflow,Grass Swale,21,20-30,29 North Swale A,Charlottesville,US,VA,1992,1992,1992
+2,1718458517_NC,Phosphorus,Inflow,Grass Strip,21,20-30,Apex High School,Apex,US,NC,2008,2009,2008
+2,1615888847_NC,Phosphorus,Outflow,Grass Strip,21,20-30,Emergency Response Center,Louisburg,US,NC,2008,2009,2008
+6,-748110633_CA,Phosphorus,Inflow,Retention Pond,21,20-30,Heron Bay Wet Pond,San Leandro,US,CA,2002,2004,2003
+3,204825328_FL,TSS,Outflow,Grass Swale,21,20-30,Florida Aquarium Parking Lot,Tampa,US,FL,1998,2000,1999
+9,156559051_CO,Phosphorus,Inflow,Wetland Channel,21,20-30,Shop Creek Wetland-Pond (1995-97),Aurora,US,CO,1995,1996,1995
+2,-343487644_NC,TSS,Inflow,Grass Strip,21,20-30,Apex High School,Apex,US,NC,2008,2009,2008
+2,-343487644_NC,Phosphorus,Outflow,Grass Strip,21,20-30,Apex High School,Apex,US,NC,2008,2009,2008
+7,201901302_WA,TSS,Inflow,Grass Strip,21,20-30,Everett,Everett,US,WA,2014,2018,2016
+2,1919436742_NC,Phosphorus,Inflow,Grass Strip,21,20-30,Emergency Response Center,Louisburg,US,NC,2008,2009,2008
+2,-343487644_NC,TSS,Outflow,Grass Strip,21,20-30,Apex High School,Apex,US,NC,2008,2009,2008
+2,1915504165_VA,Phosphorus,Outflow,Grass Swale,21,20-30,29 North Swale B,Charlottesville,US,VA,1992,1993,1993
+5,270059998_TX,Phosphorus,Inflow,Media Filter,21,20-30,HW,Austin,US,TX,1985,1987,1986
+9,1661183142_CO,Phosphorus,Inflow,Wetland Channel,21,20-30,Shop Creek Wetland-Pond (1990-94),Aurora,US,CO,1990,1994,1991
+2,1915504165_VA,TSS,Outflow,Grass Swale,21,20-30,29 North Swale B,Charlottesville,US,VA,1992,1993,1993
+4,-727994930_KS,Phosphorus,Outflow,Bioretention,21,20-30,87th Metcalf BMP,Overland Park,US,KS,2008,2010,2009
+2,1919436742_NC,Phosphorus,Outflow,Grass Strip,21,20-30,Emergency Response Center,Louisburg,US,NC,2008,2009,2008
+9,-111085006_CO,Phosphorus,Outflow,Retention Pond,21,20-30,Shop Creek Wetland-Pond (1995-97),Aurora,US,CO,1995,1996,1995
+7,77073608_WA,Phosphorus,Outflow,Detention Basin,21,20-30,Boulder Creek,Sammamish,US,WA,2010,2011,2011
+1,202000107_WI,Phosphorus,Inflow,Porous Pavement,21,20-30,MadisonPavementSite,Madison,US,WI,2020,2020,2020
+1,202000108_WI,TSS,Inflow,Porous Pavement,21,20-30,MadisonPavementSite,Madison,US,WI,2020,2020,2020
+1,202000108_WI,Phosphorus,Inflow,Porous Pavement,21,20-30,MadisonPavementSite,Madison,US,WI,2020,2020,2020
+1,202000109_WI,Phosphorus,Inflow,Porous Pavement,21,20-30,MadisonPavementSite,Madison,US,WI,2020,2020,2020
+7,-1271533783_WA,Phosphorus,Inflow,Media Filter,21,20-30,Boulder Creek,Sammamish,US,WA,2010,2011,2010.5
+7,607806237_WA,Copper,Outflow,Manufactured Device,21,20-30,Boeing Computer Services,Seattle,US,WA,1984,1985,1985
+2,1718458517_NC,TSS,Inflow,Grass Strip,21,20-30,Apex High School,Apex,US,NC,2008,2009,2008
+5,977960993_TX,TSS,Inflow,Manufactured Device,21,20-30,AR,Austin,US,TX,1996,2007,1997
+7,202000301_WA,TSS,Inflow,Manufactured Device,20,20-30,BainbridgePerkFilter,Bainbridge Island,US,WA,2009,2010,2009
+2,1707465841_VA,Phosphorus,Outflow,Media Filter,20,20-30,Airpark,Alexandria,US,VA,1994,1994,1994
+5,-2003038404_TX,Phosphorus,Outflow,Grass Strip,20,20-30,Walnut Creek,Austin,US,TX,1994,1997,1996
+1,202000108_WI,Phosphorus,Outflow,Porous Pavement,20,20-30,MadisonPavementSite,Madison,US,WI,2020,2020,2020
+2,-1375560128_NC,TSS,Outflow,Permeable Friction,20,20-30,NCDOT I-40 Site D,Faison,US,NC,2008,2010,2009
+2,1395841446_VA,TSS,Outflow,Grass Swale,20,20-30,29 North Swale A,Charlottesville,US,VA,1992,1992,1992
+1,201901701_MN,Phosphorus,Outflow,Media Filter,20,20-30,Shingle Creek-Utility Box,Minneapolis,US,MN,2016,2018,2017
+2,-1375560128_NC,TSS,Inflow,Permeable Friction,20,20-30,NCDOT I-40 Site D,Faison,US,NC,2008,2010,2009
+5,-2045875046_TX,TSS,Outflow,Media Filter,20,20-30,Barton Creek Square Shopping Center,Austin,US,TX,1985,1987,1986
+7,77073608_WA,Copper,Outflow,Detention Basin,20,20-30,Boulder Creek,Sammamish,US,WA,2010,2011,2011
+4,-545409338_TX,Phosphorus,Inflow,Wetland Basin,20,20-30,B512-01-00 Wet Detention Basin,Deer Park,US,TX,2011,2013,2011
+2,-1375560128_NC,Phosphorus,Inflow,Permeable Friction,20,20-30,NCDOT I-40 Site D,Faison,US,NC,2008,2010,2009
+2,1707465841_VA,Phosphorus,Inflow,Media Filter,20,20-30,Airpark,Alexandria,US,VA,1994,1994,1994
+2,1084444993_NC,TSS,Inflow,Grass Strip,20,20-30,NCDOT I-40 Site D,Faison,US,NC,2008,2010,2009
+5,1366698958_TX,Copper,Outflow,Media Filter,20,20-30,CC,Austin,US,TX,2009,2010,2010
+2,1707465841_VA,TSS,Inflow,Media Filter,20,20-30,Airpark,Alexandria,US,VA,1994,1994,1994
+7,675235765_WA,TSS,Outflow,Manufactured Device,20,20-30,Sound Transit Station,Tacoma,US,WA,2012,2014,2013
+2,-487215506_NC,TSS,Inflow,Grass Swale,20,20-30,NCDOT I-40 Site D,Faison,US,NC,2008,2010,2009
+2,1193812197_NC,TSS,Inflow,Permeable Friction,20,20-30,NCDOT I-40 Site C,Faison,US,NC,2008,2010,2009
+2,1084444993_NC,Phosphorus,Inflow,Grass Strip,20,20-30,NCDOT I-40 Site D,Faison,US,NC,2008,2010,2009
+7,675235765_WA,Copper,Outflow,Manufactured Device,20,20-30,Sound Transit Station,Tacoma,US,WA,2012,2014,2013
+7,-1271533783_WA,Copper,Inflow,Media Filter,20,20-30,Boulder Creek,Sammamish,US,WA,2010,2011,2011
+2,1707465841_VA,TSS,Outflow,Media Filter,20,20-30,Airpark,Alexandria,US,VA,1994,1994,1994
+5,1366698958_TX,Phosphorus,Outflow,Media Filter,20,20-30,CC,Austin,US,TX,2009,2010,2010
+4,-545409338_TX,TSS,Inflow,Wetland Basin,20,20-30,B512-01-00 Wet Detention Basin,Deer Park,US,TX,2011,2013,2011
+5,1752800999_TX,Phosphorus,Inflow,Retention Pond,20,20-30,Sand Beach Wet Pond (SB),Austin,US,TX,2009,2010,2010
+2,972115283_MD,Copper,Outflow,Grass Strip,20,20-30,Towson Glen,Towson,US,MD,2013,2014,2013.5
+5,1752800999_TX,TSS,Inflow,Retention Pond,20,20-30,Sand Beach Wet Pond (SB),Austin,US,TX,2009,2010,2010
+2,266044994_NC,TSS,Inflow,Wetland Channel,20,20-30,NCDOT I-40 Site C,Faison,US,NC,2008,2010,2009
+2,-487215506_NC,Phosphorus,Inflow,Grass Swale,20,20-30,NCDOT I-40 Site D,Faison,US,NC,2008,2010,2009
+2,-1375560128_NC,Phosphorus,Outflow,Permeable Friction,20,20-30,NCDOT I-40 Site D,Faison,US,NC,2008,2010,2009
+2,1193812197_NC,Phosphorus,Outflow,Permeable Friction,20,20-30,NCDOT I-40 Site C,Faison,US,NC,2008,2010,2009
+5,1366698958_TX,TSS,Outflow,Media Filter,20,20-30,CC,Austin,US,TX,2009,2010,2010
+2,1718458517_NC,Phosphorus,Outflow,Grass Strip,20,20-30,Apex High School,Apex,US,NC,2008,2009,2008
+2,266044994_NC,Phosphorus,Inflow,Wetland Channel,20,20-30,NCDOT I-40 Site C,Faison,US,NC,2008,2010,2009
+5,-2045875046_TX,Phosphorus,Outflow,Media Filter,20,20-30,Barton Creek Square Shopping Center,Austin,US,TX,1985,1987,1986
+4,-1407947515_TX,TSS,Inflow,Wetland Basin,20,20-30,Mason Creek Detention Basin T501-01-00 and Channel T101-00-00,Harris County,US,TX,2009,2012,2011
+7,202000301_WA,Phosphorus,Inflow,Manufactured Device,20,20-30,BainbridgePerkFilter,Bainbridge Island,US,WA,2009,2010,2009
+2,1193812197_NC,TSS,Outflow,Permeable Friction,20,20-30,NCDOT I-40 Site C,Faison,US,NC,2008,2010,2009
+4,-1407947515_TX,Phosphorus,Inflow,Wetland Basin,20,20-30,Mason Creek Detention Basin T501-01-00 and Channel T101-00-00,Harris County,US,TX,2009,2012,2011
+1,202000108_WI,TSS,Outflow,Porous Pavement,20,20-30,MadisonPavementSite,Madison,US,WI,2020,2020,2020
+1,201901701_MN,Phosphorus,Inflow,Media Filter,20,20-30,Shingle Creek-Utility Box,Minneapolis,US,MN,2016,2018,2017
+2,1193812197_NC,Phosphorus,Inflow,Permeable Friction,20,20-30,NCDOT I-40 Site C,Faison,US,NC,2008,2010,2009
+6,-748110633_CA,Phosphorus,Outflow,Retention Pond,20,20-30,Heron Bay Wet Pond,San Leandro,US,CA,2002,2004,2003
